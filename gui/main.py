@@ -29,7 +29,9 @@ class Ui(QtWidgets.QMainWindow):
         self.res2.adjustSize()
         self.res3.adjustSize()
         self.titl.adjustSize ()
-        print ('button pressed')
+        print (self.var1.text ())
+        print (self.var2.text ())
+        print (self.var3.text ())
 
 app = QtWidgets.QApplication(sys.argv)
 window = Ui()
