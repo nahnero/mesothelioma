@@ -4,7 +4,7 @@ import sys
 class Ui(QtWidgets.QMainWindow):
     def __init__(self):
         super(Ui, self).__init__()
-        uic.loadUi('proofwindow.ui', self)
+        uic.loadUi('mainwindow.ui', self)
 
         self.button = self.findChild (QtWidgets.QPushButton, 'pushButton')
 
@@ -29,9 +29,7 @@ class Ui(QtWidgets.QMainWindow):
         self.res2.adjustSize()
         self.res3.adjustSize()
         self.titl.adjustSize ()
-        print (self.var1.text ())
-        print (self.var2.text ())
-        print (self.var3.text ())
+        print ('button pressed')
 
 app = QtWidgets.QApplication(sys.argv)
 window = Ui()
