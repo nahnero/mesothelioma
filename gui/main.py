@@ -16,16 +16,23 @@ class Ui(QtWidgets.QMainWindow):
         for i in range (3):
             self.var.append (self.findChild (QtWidgets.QLineEdit, 'var'+str(i+1)+'LE'))
 
+        [var.setPlaceholderText ('input var') for var in self.var]
+
         self.button.clicked.connect (self.printButtonPressed)
         self.show()
 
     def printButtonPressed (self):
 
-        [res.setText (var.text ()) for var, res in zip (self.var, self.res)]
+        try:
+            [res.setNum (float (var.text () or float (res.text ())))\
+                    for var, res in zip (self.var, self.res)]
+        except:
+            print ('Parsing Exception')
         [res.adjustSize () for res in self.res]
         [print (var.text ()) for var in self.var]
 
-        [var.clear () for var in self.var]
+        [(var.clear (), var.repaint ()) for var in self.var]
+        #  [var for var in self.var]
 
 
 app = QtWidgets.QApplication(sys.argv)
