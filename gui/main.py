@@ -13,24 +13,28 @@ class Ui(QtWidgets.QMainWindow):
         uic.loadUi('mainwindow.ui', self)
 
         # Find button
-        self.button = self.findChild (QtWidgets.QPushButton, 'pushButton')
+        self.button = self.findChild (QtWidgets.QPushButton,\
+                'pushButton')
 
         # Find labels
         self.res = []
         for i in range (3):
-            self.res.append (self.findChild (QtWidgets.QLabel, 'res'+str(i+1)))
+            self.res.append (self.findChild (QtWidgets.QLabel,\
+                'res'+str(i+1)))
 
         # Find text fields
         self.var = []
         for i in range (3):
-            self.var.append (self.findChild (QtWidgets.QLineEdit, 'var'+str(i+1)+'LE'))
+            self.var.append (self.findChild (QtWidgets.QLineEdit,\
+                    'var'+str(i+1)+'LE'))
 
-        # Set default text on text fields, also set max number of chars
+        # Set default text on text fields, also set max number of digits
         [var.setPlaceholderText ('input var') for var in self.var]
-        [var.setMaxLength (10) for var in self.var]
+        [var.setMaxLength (15) for var in self.var]
 
         # Connect Enter key on text field to button action
-        [var.returnPressed.connect (self.printButtonPressed) for var in self.var]
+        [var.returnPressed.connect (self.printButtonPressed)\
+                for var in self.var]
 
         # Connect button to desired action
         self.button.clicked.connect (self.printButtonPressed)
