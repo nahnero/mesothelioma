@@ -15,11 +15,10 @@ y = y.replace (2, 1)                        #  sick -> 1
 x = df.loc[:, df.columns != 'class of diagnosis']
 
 ignorecols = [
-       'asbestos exposure',
        'type of MM',
-       'duration of asbestos exposure',
        'diagnosis method',
        'cytology',
+       'dead or not',
        ]
 
 x = x.drop (columns=ignorecols)

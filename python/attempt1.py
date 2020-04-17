@@ -51,10 +51,10 @@ dr = [
 x = x.drop (columns=dr)
 
 #  PCA
-from sklearn.preprocessing         import StandardScaler
-from sklearn.decomposition         import PCA
+#  from sklearn.preprocessing         import StandardScaler
+#  from sklearn.decomposition         import PCA
 
-x = StandardScaler ().fit_transform (x) #  typify
+#  x = StandardScaler ().fit_transform (x) #  typify
 #  pca = PCA (n_components = 10)
 #  principalComponents = pca.fit_transform(x)
 #  evr = pca.explained_variance_ratio_
@@ -70,11 +70,11 @@ cm, a, b, c, d = [[None]*iteraciones for i in range (5)]
 #  from sklearn.discriminant_analysis import quadraticdiscriminantanalysis as qda
 #  model = qda ();
 from sklearn.neighbors import KNeighborsClassifier
-model = KNeighborsClassifier (n_neighbors = 5)
+model = KNeighborsClassifier (n_neighbors = 50)
 
 from tqdm import tqdm
 for i in tqdm (range (iteraciones), ncols=70):
-    X_train, X_test, y_train, y_test = train_test_split (x, y, test_size = 0.4);
+    X_train, X_test, y_train, y_test = train_test_split (x, y, test_size = 0.2);
     try:
         shhhhh = model.fit (X_train, y_train);
     except:
@@ -108,5 +108,3 @@ print ('\n%.2f  %.2f\n%.2f %.2f' %(np.mean (a), np.mean (b), np.mean (c), np.mea
 #  print (y_true.values)
 #  print ('\nPredictions')
 #  print (y_pred)
-
-
