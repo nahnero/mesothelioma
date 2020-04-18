@@ -22,6 +22,8 @@ ignorecols = [
        ]
 
 x = x.drop (columns=ignorecols)
+print (x.columns)
+#  for i in x.loc[12]: print ("%g,"%(i), end = '')
 
 from sklearn.discriminant_analysis import LinearDiscriminantAnalysis
 
