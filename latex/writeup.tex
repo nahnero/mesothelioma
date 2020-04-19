@@ -52,6 +52,14 @@
 \end{figure}
 }
 
+\newcommand{\incpng}[2]{
+\begin{figure}[h]
+\centering
+\includegraphics[trim=3cm 3cm 3cm 0cm, width = 0.77\linewidth]{#1}
+\caption{#2}
+\end{figure}
+}
+
 \begin{document}
 \maketitle
 \newpage
@@ -116,7 +124,7 @@ variables. Todos los valores son \lstinline{floats} e
 \diagram {../images/boxplot.pdf}{Caja bigotes}
 
 Vemos que no hay diferencias notables entre los diagramas  de  nuestra
-población   de	 pacientes   sanos   y	 enferemos.    Las   variables
+población   de	 pacientes   sanos   y	 enfermos.    Las   variables
 \lstinline{PLT, PLT, glucosa} y \lstinline{PLD}  parecen  tener  datos
 anómalos.
 
@@ -219,10 +227,10 @@ Sequential Backward Selection ('city',
 			       'C-reactive protein (CRP)')
 \end{lstlisting}
 
-Una selección secuencial hacia adelante y hacia atras con un modelo de
+Una selección secuencial hacia adelante y hacia atrás con un modelo de
 \lstinline{randomforest} con 100 estimadores y 10 parámetros
 calculamos una precisión del 67\%. Los resultados son menores cuando
-hacemos la selección hacia atras. También lo hemos intentado con un
+hacemos la selección hacia atrás. También lo hemos intentado con un
 modelo \lstinline{knn}, los resultados son peores en torno al 50\%.
 
 \newpage
@@ -236,8 +244,8 @@ modelo \lstinline{knn}, los resultados son peores en torno al 50\%.
 
 Calculando el diagrama de pareto vemos que necesitaríamos entorno a 17
 componentes para explicar el 80\% de la varianza de los datos. Con
-estos resultados vemos que  será dificil reducir al dimensionalidad
-encomponentes principales.
+estos resultados vemos que  será difícil reducir al dimensionalidad
+en componentes principales.
 
 \newpage
 \section{Modelos de Clasificación}
@@ -302,6 +310,79 @@ FOREST & 66.51 & 2.48  & 23.95 & 5.05 &  0.73    & 0.17        & 0.74        & 1
 \caption{Resultados agregados tras 1000 repeticiones.}
 \label{table:}
 \end{table}
+
+\section{Interfaz}
+
+\incpng{../images/s1.png} {Ventana principal.}
+
+Ventana principal de nuestra interfaz. A la izquierda campos de texto
+para introducir las variables, se muestra entre paréntesis el rango de
+dicha variable en nuestra base de datos.
+
+\begin{figure}[h]
+\centering
+\includegraphics[trim=3cm 1cm 3cm 0cm, width = 0.5\linewidth]{../images/s2.png}
+\caption{Selección de paciente.}
+\end{figure}
+
+Para hacer mas cómodo su uso y evitar tener que introducir 30+
+variables a mano, al presionar Ctrl + O se abre una ventana para
+seleccionar un archivo .csv, contiene todos los valores para un
+paciente separados por comas.
+
+\newpage
+\incpng{../images/s3.png} {Importación paciente.}
+
+Al importar el paciente se rellenan automáticamente las variables, se
+pueden comprobar y editar si fuera necesario.
+
+\incpng{../images/s4.png} {Cargar variables.}
+
+Al presionar Enter con el teclado o el botón 'Leer Vars' con  el
+ratón se guardan las variables en la memoria del programa. Para
+actualizar una variable no hay más que introducir un nuevo valor y pulsar
+enter o el ratón.
+Para cargar el modelo se presiona Ctrl + M, o se elige desde el menú.
+Aparece una venta para seleccionar el archivo .py con los modelos en
+python.
+
+\newpage
+\begin{figure}[h]
+\centering
+\includegraphics[trim=3cm 1cm 3cm 0cm, width = 0.5\linewidth]{../images/s5.png}
+\caption{Selección de modelos.}
+\end{figure}
+
+Una vez cargados los modelos se selecciona que modelo se desea
+ejecutar, los botones son mutuamente excluyentes. Al ejecutarse el
+modelo se generan las métricas de evaluación a la derecha y el
+diagnóstico.
+
+\incpng{../images/s6.png} {Selección de modelos.}
+
+Cuando se selecciona otro modelo se revalúa al paciente, cada modelo
+tiene unas características diferentes en cuanto a exactitud,
+sensitividad y especificidad. En función de lo que se busque se puede
+seleccionar un modelo adecuado.
+
+\newpage
+\subsection{Interfaz sin  opciones}
+
+Esta versión restringe al usuario a usar un modelo predeterminado.
+Al pulsar el botón ejecutar, después de haber introducido los datos del
+paciente se calcula el modelo y se presentan los resultados.
+
+\incpng{../images/s8.png} {Versión limitada para médicos.}
+
+
+
+
+
+
+
+
+
+
 
 
 
