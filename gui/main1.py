@@ -65,7 +65,7 @@ class Ui(QtWidgets.QMainWindow):
                     "modelos", self.modelospath)
             modelos = importlib.util.module_from_spec(spec)
             spec.loader.exec_module(modelos)
-            (self.modelo, res) = modelos.train ("SVM")
+            (self.modelo, res) = modelos.train ("FOREST")
             pred = self.modelo.predict (self.paciente)
 
             print (self.paciente)

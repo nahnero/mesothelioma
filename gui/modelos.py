@@ -82,15 +82,15 @@ def train (chosen):
     y_pred = modelos[chosen].predict (X_test)
     cm = metrics.confusion_matrix (y_test, y_pred)
 
-    TN = cm[0][0]
+    TP = cm[0][0]
     FP = cm[0][1]
     FN = cm[1][0]
-    TP = cm[1][1]
+    TN = cm[1][1]
 
     accuracy = (TN + TP)/(TN + FP + FN + TP)
     sensitivity = TP/(FN + TP)
     specificity = TN/(FP + TN)
 
-    res = [chosen, TN, FP, FN, TP, accuracy, sensitivity, specificity]
+    res = [chosen, TP, FP, FN, TN, accuracy, sensitivity, specificity]
 
     return (modelos[chosen], res)
