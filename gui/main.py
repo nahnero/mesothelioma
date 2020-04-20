@@ -111,9 +111,6 @@ class Ui(QtWidgets.QMainWindow):
         except:
             print ('Parsing Exception')
 
-        # Print on console
-        #  [print (var.text ()) for var in self.var]
-
         # Clear and reset QLineEdit text fields
         [(var.clear (), var.repaint ()) for var in self.var]
 
@@ -139,11 +136,6 @@ class Ui(QtWidgets.QMainWindow):
                         '', './', '*.py')
                 if fname[0] != '':
                     self.modelospath = fname[0]
-                    #  spec = importlib.util.spec_from_file_location (\
-                            #  "modelos", fname[0])
-                    #  modelos = importlib.util.module_from_spec(spec)
-                    #  spec.loader.exec_module(modelos)
-                    #  modelos.train ('LDA')
 
 app = QtWidgets.QApplication(sys.argv)
 window = Ui()

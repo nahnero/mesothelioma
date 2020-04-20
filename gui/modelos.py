@@ -89,7 +89,7 @@ def train (chosen):
 
     accuracy = (TN + TP)/(TN + FP + FN + TP)
     sensitivity = TP/(FN + TP)
-    specificity = TN/(FN + TN)
+    specificity = TN/(FP + TN)
 
     res = [chosen, TN, FP, FN, TP, accuracy, sensitivity, specificity]
 

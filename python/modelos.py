@@ -97,18 +97,18 @@ for chosen in modelos:
 
     j = 0;
     for i in cm:
-        TN[j] = i[0][0]
+        TP[j] = i[0][0]
         FP[j] = i[0][1]
         FN[j] = i[1][0]
-        TP[j] = i[1][1]
+        TN[j] = i[1][1]
         j = j + 1
 
     accuracy = (np.mean(TN) + np.mean(TP))/(np.mean(TN)\
         + np.mean(FP) + np.mean(FN) + np.mean(TP))
     sensitivity = np.mean(TP)/(np.mean(FN) + np.mean(TP))
-    specificity = np.mean(TN)/(np.mean(FN) + np.mean(TN))
+    specificity = np.mean(TN)/(np.mean(FP) + np.mean(TN))
 
     print ('%6s & %.2f & %.2f & %.2f & %.2f &  %.2f & %.2f & %.2f & %.2f\\\\'\
-            %(chosen, np.mean (TN), np.mean (FP), np.mean (FN),\
-                np.mean (TP), accuracy, sensitivity, specificity,\
+            %(chosen, np.mean (TP), np.mean (FP), np.mean (FN),\
+                np.mean (TN), accuracy, sensitivity, specificity,\
                 time.time()-start))
