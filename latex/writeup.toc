@@ -6,7 +6,7 @@
 \contentsline {subsection}{\numberline {3.2}Análisis exploratorio, Extracción de características y Desarrollo y evaluación de modelos.}{8}{subsection.3.2}%
 \contentsline {subsection}{\numberline {3.3}Desarrollo Interfaz de usuario CDSS}{10}{subsection.3.3}%
 \contentsline {subsection}{\numberline {3.4}Desarrollo App pacientes}{10}{subsection.3.4}%
-\contentsline {subsection}{\numberline {3.5}Servidores y conexiones y seguridad}{10}{subsection.3.5}%
+\contentsline {subsection}{\numberline {3.5}Servidores, conexiones y seguridad}{10}{subsection.3.5}%
 \contentsline {subsection}{\numberline {3.6}Proyecto ALERT}{11}{subsection.3.6}%
 \contentsline {section}{\numberline {4}Resultados y discusión}{11}{section.4}%
 \contentsline {subsection}{\numberline {4.1}Resolución ideal}{11}{subsection.4.1}%
