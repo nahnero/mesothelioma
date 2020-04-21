@@ -44,7 +44,7 @@
 
 
 \newcommand{\diagram}[2]{
-\subsection{#2}
+\subsubsubsection{#2}
 \begin{figure}[h]
 \centering
 \includegraphics[width = 0.9\linewidth]{#1}
@@ -60,6 +60,9 @@
 \end{figure}
 }
 
+\newcommand{\subsubsubsection}[1]{\paragraph{#1}\mbox{}\\}
+\setcounter{secnumdepth}{4}
+\setcounter{tocdepth}{4}
 \begin{document}
 \maketitle
 \newpage
@@ -68,12 +71,113 @@
 \lstlistoflistings
 \newpage
 
-\section{Análisis exploratorio}
-\subsection{Tipos de datos}
+\section{Contexto y motivación}
+\section{Objetivos}
+\newpage
+\section{Materiales y métodos}
+\section{Resultados y discusión}
+\subsection{Resolución ideal}
+
+Con el objetivo  de  ofrecer  un  servicio  que  sea  de  utilidad  en
+múltiples vertientes en lo concerniente al tratamiento del mesotelioma
+maligno, se debe desarrollar dos productos que	a  su  vez  se	hallen
+interconectados,  pudiendo  ofrecer  grandes  mejoras  tanto   en   la
+eficiencia del hospital como en la calidad asistencial que el paciente
+recibe del centro médico.
+
+En primer lugar, se implementaría un sistema de ayuda  a  la  decisión
+médica en el cual, a partir de datos a los que previamente se les haya
+realizado un análisis exploratorio, se entrenarían varios  modelos  de
+predicción aplicando  el  aprendizaje  supervisado  como  podrían  ser
+modelos lineales, modelos  cuadráticos,  k-vecinos  o  random  forest.
+Asimismo, una vez entrenados y analizadas sus métricas	de  acierto  y
+error, se procedería a seleccionar el modelo que mejor resultados haya
+obtenido, siempre y cuando supere unos mínimos umbrales.   Finalmente,
+se dotaría al sistema de ayuda a la decisión médica en cuestión de una
+interfaz amigable e intuitiva para el personal sanitario, de forma que
+pudiesen a partir de la carga de datos de  un  paciente,  ejecutar  el
+modelo y obtener en un tiempo reducido si el modelo considera en  base
+a dichos datos si el paciente es enfermo o  sano,  ayudando  de  forma
+directa al diagnóstico que realizará el médico.
+
+En segundo lugar, se realizaría una aplicación móvil, a partir	de  la
+cual mediante un sistema de usuarios y	contraseñas  pudiesen  acceder
+profesionales sanitarios, enfermos e individuos con riesgo de contraer
+este cáncer.  De esta forma, cada grupo de personas podría  acceder  a
+unos servicios u otros según su condición.
+
+Así, aquellos pacientes que padezcan el cáncer dispondrían de un  chat
+con otros enfermos con el fin de recibir  apoyo  y  consejos  unos  de
+otros.	También, tendrían la posibilidad de conversar con sus médicos,
+y a su vez estarían  analizando  su  estado  diariamente,  ya  que  la
+aplicación enviaría notificaciones en las  cuales  se  pediría	a  los
+pacientes que introdujesen datos que fuesen relevantes para el estudio
+de la situación del enfermo, como podría ser el dolor de  pecho  o  la
+debilidad.  Cabe destacar que, también estarían  geolocalizados  y  se
+identificaría en un  mapa  aquellos  puntos  donde  la	exposición  al
+asbesto es mayor, y al pasar cerca  de	éstos,	la  app  emitiría  una
+notificación alertando a tales enfermos,  además  de  también  alertar
+sobre	las   citas   médicas	y   la	 ingesta   de	 medicamentos.
+
+Los pacientes en riesgo dispondrían de un chat para consultarle  dudas
+a sus respectivos médicos, además de tener la misma monitorización que
+los pacientes enfermos,  variando  las	notificaciones	recibidas  (un
+mayor número de recomendaciones sobre consejos y hábitos  a  realizar)
+
+Finalmente,  los  médicos  tendrían  disponible  un  chat  para  poder
+resolver las cuestiones que tengan  los  pacientes  de	riesgo	y  los
+enfermos, e incluso poder preguntar a los pacientes que  considere  en
+que estado se encuentran, pudiendo realizar un primer estudio  general
+vía chat.  Cabe recalcar, que los tres grupos  de  usuarios,  médicos,
+pacientes y personas en riesgo dispondrían  de	información  sobre  el
+amianto,  donde   se   halla,	que   puede   ocasionar,   prevención,
+concienciación y buenas prácticas.
+
+En síntesis, si bien es verdad que el servicio se  compondría  de  dos
+productos, el objetivo principal es coordinación entre ambos, de forma
+que, los datos	que  se  vayan	recogiendo  de	los  pacientes	en  la
+aplicación, se envíen y almacenen de forma segura en servidores a  los
+que se pueda acceder desde el sistema de ayuda a la decisión  clínica,
+de manera que a la hora de realizar distintas exploraciones y  obtener
+nuevos análisis de los pacientes, los datos que haya podido introducir
+directamente desde la aplicación el paciente  queden  ya  registrados,
+acelerando  los  flujos  de  trabajo  del  hospital.   Por  tanto,  se
+promociona la condición de paciente activo, donde se hace partícipe al
+propio paciente del cuidado  de  su  salud,  ofreciéndole  los	medios
+necesarios para mejorar su calidad de vida mediante el	tratamiento  y
+prevención del mesotelioma maligno a partir del uso de las tecnologías
+de la información y la comunicación.
+
+\subsection{Resolución real}
+
+Si bien es verdad que las implementaciones realizadas servirían a modo
+de una primera aproximación de lo que podría ser un proyecto  de  esta
+envergadura, podrían considerarse  de  gran  utilidad  a  la  hora  de
+considerarse como prototipados, de forma que la solución real  acabara
+aproximándose al máximo a la solución ideal.
+
+En lo concerniente al sistema de  ayuda  a  la	decisión  clínica,  en
+primer lugar, se ha realizado un análisis exploratorio	de  los  datos
+para identificar datos	anómalos  y  aquellas  variables  que  podrían
+resultar más significativas. Así, pese a tener variables de relevancia
+con el mesotelioma maligno como podría ser la exposición al asbesto  o
+la duración de ésta, analizando los datos disponibles en  la  base  de
+datos de enfermos y sanos, observamos como como los valores de unos  y
+otros son muy similares en la mayoría de campos,  por  lo  que	se  ha
+descartado la idea de reducir la dimensionalidad inicialmente. Muestra
+de ello puede ser los histogramas de las variables, donde  se  aprecia
+que los valores de para sanos y  enfermos  son	muy  similares	en  la
+mayoría de casos, o el gráfico de Pareto donde podemos visualizar como
+serían necesarias 17 componentes para explicar el 80\% de la  varianza
+de los datos, por lo que se concluye las componentes explican muy poca
+varianza individualmente.
+
+\newpage
+\subsubsection{Análisis exploratorio}
+\subsubsubsection{Tipos de datos}
 
 Comenzamos analizando la base de datos,  consta de las siguientes
 variables:
-\\
 \begin{lstlisting}[
 	label=lst:cod1,
 	caption = {Variables de la base de datos.},
@@ -151,8 +255,8 @@ idénticas, como intuíamos de los histogramas.
 \diagram {../images/corrtodas.pdf}{Correlaciones}
 
 \newpage
-\section{Extracción de Características}
-\subsection{Filter methods}
+\subsubsection{Extracción de Características}
+\subsubsubsection{Filter methods}
 
 \begin{lstlisting}[
 	label=lst:cod2,
@@ -197,7 +301,7 @@ características de mayor a menor relevancia a la hora de resolver el
 problema de clasificación
 
 \newpage
-\subsection{Wrapper methods}
+\subsubsubsection{Wrapper methods}
 \begin{lstlisting}[
 	label=lst:cod3,
 	caption = {Mejores variables seg\'un \lstinline{SFS} y \lstinline{SBS}},
@@ -233,65 +337,76 @@ calculamos una precisión del 67\%. Los resultados son menores cuando
 hacemos la selección hacia atrás. También lo hemos intentado con un
 modelo \lstinline{knn}, los resultados son peores en torno al 50\%.
 
-\newpage
-\subsection{PCA}
+\subsubsubsection{PCA}
 
-\begin{figure}[h]
+\begin{wrapfigure}[6]{l}{0.6\linewidth}
 \centering
+\vspace{-1cm}
 \includegraphics[width = 0.9\linewidth]{../images/pareto.pdf}
 \caption{Diagrama de pareto.}
-\end{figure}
-
+\end{wrapfigure}
 Calculando el diagrama de pareto vemos que necesitaríamos entorno a 17
 componentes para explicar el 80\% de la varianza de los datos. Con
 estos resultados vemos que  será difícil reducir al dimensionalidad
-en componentes principales.
+de nuestros datos.
 
 \newpage
-\section{Modelos de Clasificación}
+\subsubsection{Modelos de Clasificación}
 
-\begin{lstlisting}[
-	label=lst:cod3,
-	caption = {Modelos de clasificaci\'on en Python},
-	]
-from sklearn.discriminant_analysis import LinearDiscriminantAnalysis
+En segundo lugar, se ha procedido a programar varios modelos en Python
+a partir de las  librerías  disponibles  para  el  desarrollo  de  tal
+implementación.  Así se  ha  seleccionado  el  análisis  discriminante
+lineal (LDA), el análisis discriminante cuadrático  (QDA),  k  vecinos
+(KNN), random forest (RF), máquinas de soporte	vectorial  (SVM),  una
+red neuronal probabilística (PNN) y un perceptrón multicapa (MLP).  De
+esta forma, se han obtenido los siguientes resultados en lo relativo a
+la precisión, sensibilidad, especifidad y tiempo de ejecución  de  los
+respectivos modelos.
 
-modeloLDA = LinearDiscriminantAnalysis ();
 
-from sklearn.discriminant_analysis import QuadraticDiscriminantAnalysis
+% \begin{lstlisting}[
+%         label=lst:cod3,
+%         caption = {Modelos de clasificaci\'on en Python},
+%         ]
+% from sklearn.discriminant_analysis import LinearDiscriminantAnalysis
 
-modeloQDA = QuadraticDiscriminantAnalysis ();
+% modeloLDA = LinearDiscriminantAnalysis ();
 
-from sklearn.neighbors import KNeighborsClassifier
+% from sklearn.discriminant_analysis import QuadraticDiscriminantAnalysis
 
-modeloKNN   = KNeighborsClassifier (n_neighbors = 50)
+% modeloQDA = QuadraticDiscriminantAnalysis ();
 
-from sklearn.ensemble import RandomForestClassifier
+% from sklearn.neighbors import KNeighborsClassifier
 
-modelFOREST = RandomForestClassifier (
-        n_estimators = 100,
-        criterion = 'gini',
-        )
+% modeloKNN   = KNeighborsClassifier (n_neighbors = 50)
 
-from neupy import algorithms
+% from sklearn.ensemble import RandomForestClassifier
 
-modeloPNN = algorithms.PNN (
-        std=5,
-        verbose=False,
-        )
+% modelFOREST = RandomForestClassifier (
+%         n_estimators = 100,
+%         criterion = 'gini',
+%         )
 
-from sklearn.neural_network import MLPClassifier as MLP
+% from neupy import algorithms
 
-modeloMLP = MLP(
-        hidden_layer_sizes = (175, 100, 50, 25, ),
-        max_iter = 500,
-        random_state = 1)
+% modeloPNN = algorithms.PNN (
+%         std=5,
+%         verbose=False,
+%         )
 
-from sklearn import svm
+% from sklearn.neural_network import MLPClassifier as MLP
 
-modeloSVM = svm.LinearSVC()
-\end{lstlisting}
+% modeloMLP = MLP(
+%         hidden_layer_sizes = (175, 100, 50, 25, ),
+%         max_iter = 500,
+%         random_state = 1)
 
+% from sklearn import svm
+
+% modeloSVM = svm.LinearSVC()
+% \end{lstlisting}
+
+\vfill
 \begin{table}[h!]
 \centering
 \begin{tabular}{|c|c|c|c|c|c|c|c|c|}
@@ -311,37 +426,63 @@ FOREST & 66.55 & 2.54  & 23.96 & 4.95 &  0.73    & 0.74        & 0.66        & 1
 \label{table:}
 \end{table}
 
-\section{Interfaz}
 
+\vfill
+
+\subsubsection{Interfaz}
+
+Asimismo, con el fin de prestar una facilidad al usuario de cara a
+usar los modelos predictivos en cuestión, se han realizado dos
+interfaces simples para mostrar los resultados que se deseen. La
+primera interfaz desarrollada nos abre primeramente una ventana donde
+podemos introducir los datos del paciente a analizar mediante el
+sistema de ayuda a la decisión clínica. Asimismo, con el fin de
+facilitar la introducción de datos en el sistema la interfaz permite
+cargar un archivo (.csv) con todos los datos para proceder al estudio
+en cuestión. Una vez, se ha comprobado que los valores introducidos
+son correctos o modificado desde la propia interfaz aquellos que no lo
+sean, se indica con que modelo se pretende realizar la clasificación,
+mostrando en un tiempo reducido las métricas de evaluación del modelo
+para la base de datos y el diagnóstico particular para los datos
+introducidos (sano o enfermo). A continuación se muestra en
+detalldamente la funcionalidad y la nvegación de nuestra la app.
+
+\newpage
+
+\vfill
 \incpng{../images/s1.png} {Ventana principal.}
+\vfill
 
 Ventana principal de nuestra interfaz. A la izquierda campos de texto
 para introducir las variables, se muestra entre paréntesis el rango de
 dicha variable en nuestra base de datos.
 
+\vfill
 \begin{figure}[h]
 \centering
 \includegraphics[trim=3cm 1cm 3cm 0cm, width = 0.5\linewidth]{../images/s2.png}
 \caption{Selección de paciente.}
 \end{figure}
+\vfill
 
 Para hacer mas cómodo su uso y evitar tener que introducir 30+
-variables a mano, al presionar Ctrl + O se abre una ventana para
+variables a mano, al presionar Cmd + O se abre una ventana para
 seleccionar un archivo .csv, contiene todos los valores para un
 paciente separados por comas.
 
 \newpage
 \incpng{../images/s3.png} {Importación paciente.}
 
-Al importar el paciente se rellenan automáticamente las variables, se
+Al importar el paciente se rellenan automáticamente las variables,  se
 pueden comprobar y editar si fuera necesario.
 
 \incpng{../images/s4.png} {Cargar variables.}
 
-Al presionar Enter con el teclado o el botón 'Leer Vars' con  el
-ratón se guardan las variables en la memoria del programa. Para
-actualizar una variable no hay más que introducir un nuevo valor y pulsar
-enter o el ratón.
+Al presionar Enter con el teclado o el botón 'Leer Vars' con el  ratón
+se guardan las variables en la memoria del programa.  Para  actualizar
+una variable no hay más que introducir un nuevo valor y pulsar enter o
+el ratón.
+
 Para cargar el modelo se presiona Ctrl + M, o se elige desde el menú.
 Aparece una venta para seleccionar el archivo .py con los modelos en
 python.
@@ -353,20 +494,38 @@ python.
 \caption{Selección de modelos.}
 \end{figure}
 
-Una vez cargados los modelos se selecciona que modelo se desea
-ejecutar, los botones son mutuamente excluyentes. Al ejecutarse el
-modelo se generan las métricas de evaluación a la derecha y el
+Una vez cargados  los  modelos	se  selecciona	que  modelo  se  desea
+ejecutar, los botones son mutuamente excluyentes.   Al	ejecutarse  el
+modelo se generan las  métricas  de  evaluación  a  la	derecha  y  el
 diagnóstico.
 
 \incpng{../images/s6.png} {Selección de modelos.}
 
-Cuando se selecciona otro modelo se revalúa al paciente, cada modelo
-tiene unas características diferentes en cuanto a exactitud,
-sensitividad y especificidad. En función de lo que se busque se puede
+Cuando se selecciona otro modelo se revalúa al paciente,  cada	modelo
+tiene  unas  características  diferentes  en   cuanto	a   exactitud,
+sensitividad y especificidad.  En función de lo que se busque se puede
 seleccionar un modelo adecuado.
 
-\newpage
-\subsection{Interfaz sin  opciones}
+Si bien es verdad que es un prototipado  básico  y  que  podría  tener
+mejoras en múltiples aspectos (interfaz más amigable,  más  funciones,
+pruebas  de  usabilidad...)  es  importante   recalcar	 el   objetivo
+específico que se pretende con dicho interfaz en particular.  En  este
+caso, estaría destinado a  una	vertiente  de  carácter  investigador,
+donde se pretenda comparar los múltiples modelos  empleados,  analizar
+sus resultados y determinar en que situaciones convendría utilizar  un
+determinado  modelo  u	otro  según  la  distribución  de  los	datos.
+
+No obstante, a la hora de emplear un sistema de ayuda  a  la  decisión
+clínica de forma continuada y habitual en  centros  hospitalarios,  la
+opción de incluir varios de modelos de predicción no es relevante,  ya
+que la finalidad en este caso es simple; obtener la clasificación  del
+modelo con mejores métricas para  ayudar  al  diagnóstico  médico  del
+mesotelioma maligno.  Por tanto, se ha desarrollado también un segundo
+interfaz donde se anula la posibilidad de  seleccionar	un  modelo  en
+particular, y a partir de los datos introducidos el  modelo  clasifica
+al paciente como sano o enfermo.
+
+\subsubsubsection{Aplicación para médicos}
 
 Esta versión restringe al usuario a usar un modelo predeterminado.
 Al pulsar el botón ejecutar, después de haber introducido los datos del
@@ -375,13 +534,247 @@ paciente se calcula el modelo y se presentan los resultados.
 \incpng{../images/s8.png} {Versión limitada para médicos.}
 
 
+Así, aunque sería más idóneo que el modelo  clasificase  el  grado  de
+enfermedad en vez de  dar  un  resultado  binario,  se	demuestra  que
+perfeccionando los modelos de predicción y alimentando los modelos con
+más datos podría llegarse a un sistema de ayuda a la decisión  clínica
+de gran utilidad para cualquier profesional médico, ya	que  en  pocos
+segundos o minutos se obtendría  una  precisión  a  tener  en  cuenta.
+Asimismo, cabe destacar que también habría que consolidar una interfaz
+intuitiva y amigable de forma que al personal sanitario le suponga una
+mejora en su calidad y ritmo  de  trabajo  y  no  un  descenso	en  su
+rendimiento habitual.
 
 
+El sistema de ayuda a la decisión clínica en este caso sería  de  gran
+utilidad para  diagnosticar  el  mesotelioma  maligno  prematuramente,
+pudiendo ofrecer un mejor tratamiento desde un inicio.	 No  obstante,
+tal y como se ha expuesto en la solución ideal, se busca una  solución
+para el problema del mesotelioma maligno relación con la exposición al
+amianto.  Luego entonces, únicamente realizando un prototipado	de  un
+sistema de apoyo a la decisión clínica, si bien es cierto que  nuestro
+proyecto sería útil,  también  se  podría  definir  como  un  proyecto
+incompleto donde no se estaría optimizando los recursos existentes  en
+la actualidad relacionados tanto con  las  TICS  como  con  el	propio
+mesotelioma maligno.
+
+\subsubsubsection{Aplicación para pacientes}
+
+De esta forma, intentando aportar una solución integral a la situación
+expuesta en lo referente al amianto y al mesotelioma  maligno,	se  ha
+desarrollado también una primera aproximación  de  lo  que  sería  una
+aplicación móvil para enfermos, personas en riesgo  y  médicos.   Así,
+mediante la herramienta desarrollada por el instituto  tecnológico  de
+Massachusetts  (MIT)  App  Inventor,  se  ha  podido  implementar   un
+prototipado con varias de las funcionalidades de las que la aplicación
+en su fase definitiva debería ofrecer.
+
+Inicialmente al abrir la app nos encontramos con una pantalla  inicial
+en la cual podemos iniciar sesión o registrarnos  como	pacientes  que
+padecen la enfermedad, individuos de riesgo o  profesionales  médicos.
+Así, aunque en este sistema de registro al final se termina accediendo
+al mismo menú en los tres casos debido a que en la base  de  datos  se
+guardan sin distinción alguna entre enfermos,  personas  en  riesgo  y
+personal  sanitario,  se  ha  considerado  relevante  plasmar  en   el
+prototipado la distinción entres grupos distintos de usuarios. De esta
+forma, de cara a la consolidación de una aplicación sólida, habría que
+guardar cada usuario con la pertenencia correspondiente al grupo en el
+que se han registrado, de manera que los servicios ofrecidos  en  cada
+inicio de sesión serían distintos según seamos enfermos, personas  con
+riesgo o médicos.  Asimismo, la cuenta debería estar conectada con  un
+identificador único, de manera que médicos  y  pacientes  tuviesen  la
+posibilidad a acceder a registros personales.
+
+Una vez, llegados al menú principal, en el caso de primera versión  de
+la aplicación se nos ofrecen cinco opciones: contactar con un médico o
+paciente mediante correo electrónico, visualizar nuestra  ubicación  y
+las zonas donde la exposición al amianto sea  elevada,	información  y
+recomendaciones sobre el problema a  tratar,  las  cuales  pueden  ser
+reproducidas vía audio, con un	enlace	para  descargar  una  guía  de
+prevención contra el amianto y un registro donde introducir  variables
+referentes al paciente, las cuales pueden luego  almacenarse  como  un
+archivo csv para luego poder enviarlas al centro médico.   A  su  vez,
+pese a la precariedad del registro de datos implementado, ya que  para
+enviar los datos habría que emplear otra aplicación  en  el  caso  del
+prototipado  desarrollado,   incluye   varias	funcionalidades   como
+renombrar variables o eliminar y modificar registros.  Finalmente,  en
+el menú principal implementado también existe la opción de  volver  al
+inicio, lo cual sería equivalente en este desarrollo inicial a	cerrar
+sesión.
+
+\newpage
+\begin{figure}[h]
+\centering
+\includegraphics[width = 0.9\linewidth]{../images/s1.png}
+\caption{PLACEHOLDER.}
+\end{figure}
+
+Por tanto, ha quedado patente la versatilidad y eficacia que  presenta
+App Inventor, ya que permite el  desarrollo  del  prototipado  de  una
+aplicación de forma muy simple, intuitiva a partir de nociones básicas
+de programación que cualquiera	puede  aprender  muy  fácilmente.   No
+obstante, pese a que se  puede	considerar  una  primera  aproximación
+correcta, evidentemente es  incompleta	ya  que  carece  de  múltiples
+funcionalidades  que   requerirían   sumergirnos   en	lenguajes   de
+programación como C++, Java o Kotlin, para los cuales sería  necesaria
+una inversión de tiempo mucho mayor. Así, para llegar a una aplicación
+donde verdaderamente se sobrepasase la fase de prototipado, habría que
+posiblemente emplear uno de estos lenguajes y  añadir  las  siguientes
+funcionalidades principalmente:
+
+\begin{itemize}
+\item
+Conexión entre las sesiones y los registros médicos, de forma que
+médicos y pacientes pudiesen acceder a dichos registros
+
+\item
+Almacenar usuarios teniendo en cuenta si son profesionales sanitarios,
+personas de riesgo o enfermos, de forma que los servicios existentes
+en cada menú fuesen distintos
+
+\item
+Inclusión de un chat para todos los menús, de manera que los pacientes
+pudiesen contactar entre ellos y con sus respectivos médicos, pudiendo
+ayudarse unos a otros y disponiendo de un canal de comunicación fluido
+para contactar con el personal sanitario
+
+\item
+En los servicios disponibles para médicos, eliminar la opción de
+registrar datos y añadir un nuevo servicio que fuese para visualizar
+los registros de los pacientes
+
+\item
+Tanto en pacientes de riesgo como enfermos, posibilitar la opción de
+introducir todos los datos que precise el médico para un diagnóstico
+inicial de los que pueda disponer el paciente, y subir los datos a un
+servidor a partir del cual el sistema de ayuda a la decisión clínica y
+otros servicios del hospital pudiesen acceder.
+
+\item
+Adición de notificaciones y recordatorios de citas, ingesta de
+medicamentos y medidas de seguridad para personas de riesgo y enfermos
+
+\item
+Monitorización de la posición de los pacientes, de forma que al estar
+a menos de una determinada distancia de una zona con una gran
+exposición al amianto, saltase una alarma.
+
+\item
+Inclusión en el servicio de información y recomendaciones enlaces a
+videos, noticias de periódico y más información que se fuese
+actualizando periódicamente.
+\end{itemize}
 
 
+\subsection{Servidores y conexiones y seguridad}
 
 
+En lo concerniente a los servidores para almacenar la información,  se
+ha decidido optar por la opción de un servidor en la  nube.   Así,  el
+motivo de esta decisión reside en las ventajas que ofrece un  servidor
+con estas características, ya  que  podríamos  ampliar	o  reducir  el
+espacio disponible de forma flexible aumentando la rentabilidad frente
+a almacenamientos compartidos o  locales.   A  su  vez,  la  idea  del
+proyecto sería intentar expandir  su  alcance  a  nivel  autonómico  o
+nacional progresivamente, por lo  que  sería  necesario  almacenar  la
+información de los pacientes en un espacio al  que  se	pueda  acceder
+fácilmente por todos los hospitales o centro sanitarios implicados  en
+el proyecto sin comprometer por  ello  los  recursos  individuales  de
+alguno de ellos.  A su vez, habría que optar por  una  plataforma  que
+ofreciese unos umbrales de seguridad  aptos  para  el  tratamiento  de
+información sanitaria, de forma  que  realmente  pudiese  aprovecharse
+ventajas como la confiabilidad o escalabilidad de los servidores en la
+nube.
 
+Asimismo, incidiendo en el aspecto de la  seguridad,  el  proyecto  en
+cuestión apuesta por un paciente activo el cual tiene la capacidad  de
+participar activamente en su propia salud, en este  caso  mediante  la
+información y recomendaciones ofrecidas en la aplicación y a partir de
+la consulta de registros médicos y envío de datos de su estado	actual
+a los servidores mencionados anteriormente. También, sería mencionable
+que la aplicación  dispondría  no  sólo  de  un  chat  para  comunicar
+pacientes, sino también para contactar con  profesionales  sanitarios,
+por lo que se estaría transmitiendo continuamente información personal
+y confidencial.  Por tanto, debido al flujo de datos  que  se  estaría
+dando y a la condición de éstos, sería necesario el  uso  de  una  red
+privada virtual (VPN).	Así, el tráfico  de  datos  generado  viajaría
+cifrado, dificultando que agentes externos puedan robar la información
+confidencial  transmitida.   A	su  vez,  todos  los  usuarios	de  la
+aplicación podrían emplearla haciendo uso de  redes  Wi-Fi  locales  o
+públicas con la tranquilidad de que se están empleando	recursos  para
+proteger la integridad y  confidencialidad  de	la  información.   Por
+tanto,	podríamos  emplear  protocolos	como  Ipsec  para  mejorar  la
+seguridad  de  nuestras   conexiones   y   transmisiones   de	datos.
+
+\subsection{Proyecto ALERT}
+
+Con el fin de localizar aquellas regiones en la que la	exposición  al
+asbesto fuese mayor, se emplearía el dispositivo ALERT.  Este  sistema
+desarrollado como un proyecto europeo en el que han colaborado	varios
+centros de investigación entre los que podríamos destacar el Instituto
+de Biomecánica de Valencia (IBV), permite  detectar  la  presencia  de
+fibras de amianto en el aire analizando los patrones  de  luz  de  las
+partículas suspendidas en el  entorno.	 Así,  gracias	a  su  pequeño
+tamaño, lo que hace que se considere un  dispositivo  portable,  junto
+con la capacidad de analizar en tiempo real la cantidad de microfibras
+de amianto en el espacio que lo rodea, permitiría identificar aquellas
+industrias donde le riesgo fuese mayor	pudiendo  obtener  información
+espacial sobre las  zonas  donde  el  nivel  de  riesgo  debido  a  la
+manipulación del amianto es mayor.
+
+\section{Conclusiones}
+
+\section{Lecciones aprendidas y reflexiones}
+
+Mediante la realización del trabajo en cuestión hemos podido comprobar
+la dificultad que supone no  sólo  plantear  una  idea,  sino  también
+llevarla a la práctica.  Es preciso y  fundamental  iniciar  cualquier
+proyecto comprendiendo correctamente el  problema  identificado,  para
+poder luego desarrollar una solución que realmente sea	útil  y  pueda
+aplicarse en la resolución de aquello que se  pretende	alcanzar.   Es
+precisamente  por  ello  por  lo  que  se  ha  pretendido  abordar  el
+tratamiento del  mesotelioma  maligno  desde  la  perspectiva  de  las
+tecnologías de la información y la comunicación  mediante  un  enfoque
+global.  Con esto nos referimos a que se ha intentado prototipar de un
+proyecto en el que se pretende ayudar tanto a pacientes  e  individuos
+de riesgo como	a  profesionales  sanitarios,  con  el	fin  de  poder
+consolidar  una   solución   integral	al   problema	en   cuestión.
+
+No obstante, si dicho proyecto se fuese  a  realizar  para  finalmente
+obtener una solución verdaderamente aplicable a los hospitales y a  la
+sociedad, es evidente que se necesitaría un equipo multidisciplinar en
+el  que  deberían  colaborar  médicos,	ingenieros  y  pacientes  para
+realmente  identificar	aquellos  puntos   del	 problema   donde   la
+utilización de recursos tecnológicos e	informáticos  permitiesen  una
+mejora directa en la calidad de vida del paciente.  Asimismo,  durante
+el desarrollo del trabajo expuesto se ha incidido en  el  concepto  de
+paciente activo, ya que mediante el  uso  de  las  tecnologías	de  la
+información y comunicación dicho paciente, en un pasado pasivo,  puede
+adquirir un rol principal en el cuidado de su salud  a	partir	de  su
+colaboración con el personal sanitario mediante el uso por ejemplo  de
+aplicaciones móviles.
+
+A su vez, es de vital importancia mencionar los controles que deberían
+pasar todas y cada una de las partes que integran el  proyecto,  tanto
+el sistema de ayuda a la decisión clínica y la aplicación móvil,  como
+la seguridad en la transmisión y el almacenamiento de datos durante el
+flujo de trabajo de la solución desarrollada.
+
+Las  tecnologías  de  la  información	y   la	 comunicación	pueden
+considerarse como uno  de  los	valores  más  significativos  a  nivel
+actual, no sólo para  el  sector  industrial,  sino  también  para  el
+mercado sanitario.   Así,  a  partir  del  acoplamiento  de  múltiples
+herramientas que colaboren y actúen en sintonía unas con otras	existe
+la posibilidad de mejorar y optimizar los recursos clínicos y médicos,
+lo que conlleva de forma directa una mejora en la calidad  asistencial
+del  protagonista  del	campo  sanitario:  el  paciente.   Finalmente,
+destacar que durante la realización del trabajo se  ha	ido  aplicando
+los conocimientos adquiridos durante la  carrera,  y  específicamente,
+los desarrollados en las asignaturas  de  sistemas  de	información  y
+telemedicina, por lo que se ha podido aplicar a la  resolución	de  un
+problema  (al  menos,  en  el  planteamiento  de  la  solución	y   el
+prototipado de la misma) demostrando utilidad y aplicabilidad  de  los
+contenidos académicos a la realidad.
 
 
 

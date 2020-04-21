@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2020.4.1)  20 APR 2020 23:03
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2020.4.1)  21 APR 2020 19:45
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -371,29 +371,25 @@ File: l3backend-pdfmode.def 2020-02-23 L3 backend support: PDF mode
 \l__kernel_color_stack_int=\count280
 \l__pdf_internal_box=\box50
 )
-(./writeup.aux
-
-LaTeX Warning: Label `lst:cod3' multiply defined.
-
-)
+(./writeup.aux)
 \openout1 = `writeup.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 63.
-LaTeX Font Info:    ... okay on input line 63.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 63.
-LaTeX Font Info:    ... okay on input line 63.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 63.
-LaTeX Font Info:    ... okay on input line 63.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 63.
-LaTeX Font Info:    ... okay on input line 63.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 63.
-LaTeX Font Info:    ... okay on input line 63.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 63.
-LaTeX Font Info:    ... okay on input line 63.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 63.
-LaTeX Font Info:    ... okay on input line 63.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 63.
-LaTeX Font Info:    ... okay on input line 63.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 66.
+LaTeX Font Info:    ... okay on input line 66.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 66.
+LaTeX Font Info:    ... okay on input line 66.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 66.
+LaTeX Font Info:    ... okay on input line 66.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 66.
+LaTeX Font Info:    ... okay on input line 66.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 66.
+LaTeX Font Info:    ... okay on input line 66.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 66.
+LaTeX Font Info:    ... okay on input line 66.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 66.
+LaTeX Font Info:    ... okay on input line 66.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 66.
+LaTeX Font Info:    ... okay on input line 66.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -452,7 +448,7 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
 \AtBeginShipoutBox=\box52
-Package hyperref Info: Link coloring OFF on input line 63.
+Package hyperref Info: Link coloring OFF on input line 66.
 
 (/usr/local/texlive/2019/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2019/09/16 v2.46 Cross-referencing by name of section
@@ -466,9 +462,9 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
 \c@section@level=\count287
 )
-LaTeX Info: Redefining \ref on input line 63.
-LaTeX Info: Redefining \pageref on input line 63.
-LaTeX Info: Redefining \nameref on input line 63.
+LaTeX Info: Redefining \ref on input line 66.
+LaTeX Info: Redefining \pageref on input line 66.
+LaTeX Info: Redefining \nameref on input line 66.
  (./writeup.out) (./writeup.out)
 \@outlinefile=\write3
 \openout3 = `writeup.out'.
@@ -487,7 +483,7 @@ eup.toc)
 \openout4 = `writeup.toc'.
 
 
-(./writeup.lof)
+(./writeup.lof [2])
 \tf@lof=\write5
 \openout5 = `writeup.lof'.
 
@@ -500,17 +496,24 @@ File: latin1.def 2018/08/11 v1.3c Input encoding file
 )
 (/usr/local/texlive/2019/texmf-dist/tex/latex/base/latin1.def
 File: latin1.def 2018/08/11 v1.3c Input encoding file
-) [2])
+))
 \tf@lol=\write6
 \openout6 = `writeup.lol'.
 
- [3]
-Underfull \hbox (badness 10000) in paragraph at lines 74--80
+ [3] [4]
+[5]
+Overfull \hbox (10.693pt too wide) in paragraph at lines 159--174
+\OT1/cmr/m/n/10 exploratorio de los datos para identificar datos an^^Somalos y 
+aquellas variables que podr^^S^^Pan resultar m^^Sas significativas.
+ []
+
+[6]
+Underfull \hbox (badness 10000) in paragraph at lines 177--178
 
  []
 
 Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on i
-nput line 80.
+nput line 184.
 (/usr/local/texlive/2019/texmf-dist/tex/latex/base/latin1.def
 File: latin1.def 2018/08/11 v1.3c Input encoding file
 )
@@ -522,11 +525,11 @@ File: latin1.def 2018/08/11 v1.3c Input encoding file
 )
 (/usr/local/texlive/2019/texmf-dist/tex/latex/base/latin1.def
 File: latin1.def 2018/08/11 v1.3c Input encoding file
-) [4]
-<../images/boxplot.pdf, id=177, 994.14766pt x 1144.87416pt>
+) [7]
+<../images/boxplot.pdf, id=245, 994.14766pt x 1144.87416pt>
 File: ../images/boxplot.pdf Graphic file (type pdf)
 <use ../images/boxplot.pdf>
-Package pdftex.def Info: ../images/boxplot.pdf  used on input line 124.
+Package pdftex.def Info: ../images/boxplot.pdf  used on input line 228.
 (pdftex.def)             Requested size: 435.32422pt x 501.33542pt.
 
 (/usr/local/texlive/2019/texmf-dist/tex/latex/base/latin1.def
@@ -534,34 +537,42 @@ File: latin1.def 2018/08/11 v1.3c Input encoding file
 )
 (/usr/local/texlive/2019/texmf-dist/tex/latex/base/latin1.def
 File: latin1.def 2018/08/11 v1.3c Input encoding file
-) [5 <../images/boxplot.pdf>]
-<../images/histogram.pdf, id=262, 987.76443pt x 1144.87416pt>
+) [8 <../images/boxplot.pdf>]
+<../images/histogram.pdf, id=330, 987.76443pt x 1144.87416pt>
 File: ../images/histogram.pdf Graphic file (type pdf)
 <use ../images/histogram.pdf>
-Package pdftex.def Info: ../images/histogram.pdf  used on input line 132.
+Package pdftex.def Info: ../images/histogram.pdf  used on input line 236.
 (pdftex.def)             Requested size: 435.32422pt x 504.56725pt.
- [6 <../images/histogram.pdf>]
-<../images/kdens.pdf, id=321, 983.48055pt x 1131.13864pt>
+ [9 <../images/histogram.pdf>]
+<../images/kdens.pdf, id=389, 983.48055pt x 1131.13864pt>
 File: ../images/kdens.pdf Graphic file (type pdf)
 <use ../images/kdens.pdf>
-Package pdftex.def Info: ../images/kdens.pdf  used on input line 140.
+Package pdftex.def Info: ../images/kdens.pdf  used on input line 244.
 (pdftex.def)             Requested size: 435.32422pt x 500.67123pt.
- [7 <../images/kdens.pdf>]
-<../images/qqplot.pdf, id=352, 994.14766pt x 1144.87416pt>
+ [10 <../images/kdens.pdf>]
+<../images/qqplot.pdf, id=419, 994.14766pt x 1144.87416pt>
 File: ../images/qqplot.pdf Graphic file (type pdf)
 <use ../images/qqplot.pdf>
-Package pdftex.def Info: ../images/qqplot.pdf  used on input line 148.
+Package pdftex.def Info: ../images/qqplot.pdf  used on input line 252.
 (pdftex.def)             Requested size: 435.32422pt x 501.33542pt.
- [8 <../images/qqplot.pdf>]
-<../images/corrtodas.pdf, id=473, 1053.33221pt x 950.67549pt>
+ [11 <../images/qqplot.pdf>]
+<../images/corrtodas.pdf, id=541, 1053.33221pt x 950.67549pt>
 File: ../images/corrtodas.pdf Graphic file (type pdf)
 <use ../images/corrtodas.pdf>
-Package pdftex.def Info: ../images/corrtodas.pdf  used on input line 151.
+Package pdftex.def Info: ../images/corrtodas.pdf  used on input line 255.
 (pdftex.def)             Requested size: 435.32422pt x 392.89828pt.
- [9 <../images/corrtodas.pdf>]
+ [12 <../images/corrtodas.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 259--260
+
+ []
+
 (/usr/local/texlive/2019/texmf-dist/tex/latex/base/latin1.def
 File: latin1.def 2018/08/11 v1.3c Input encoding file
-) [10]
+) [13]
+Underfull \hbox (badness 10000) in paragraph at lines 304--308
+
+ []
+
 (/usr/local/texlive/2019/texmf-dist/tex/latex/base/latin1.def
 File: latin1.def 2018/08/11 v1.3c Input encoding file
 )
@@ -570,76 +581,102 @@ File: latin1.def 2018/08/11 v1.3c Input encoding file
 )
 (/usr/local/texlive/2019/texmf-dist/tex/latex/base/latin1.def
 File: latin1.def 2018/08/11 v1.3c Input encoding file
-) [11]
-<../images/pareto.pdf, id=595, 407.62726pt x 287.65543pt>
+)
+Underfull \hbox (badness 10000) in paragraph at lines 340--341
+
+ []
+
+<../images/pareto.pdf, id=636, 407.62726pt x 287.65543pt>
 File: ../images/pareto.pdf Graphic file (type pdf)
 <use ../images/pareto.pdf>
-Package pdftex.def Info: ../images/pareto.pdf  used on input line 241.
-(pdftex.def)             Requested size: 435.32422pt x 307.20009pt.
- [12 <../images/pareto.pdf>] (/usr/local/texlive/2019/texmf-dist/tex/latex/base
-/latin1.def
-File: latin1.def 2018/08/11 v1.3c Input encoding file
-)
-<../images/s1.png, id=618, 1003.75pt x 624.3325pt>
+Package pdftex.def Info: ../images/pareto.pdf  used on input line 345.
+(pdftex.def)             Requested size: 261.19719pt x 184.32268pt.
+
+Underfull \hbox (badness 6708) in paragraph at lines 348--352
+[][]\OT1/cmr/m/n/10 Calculando el diagrama de pareto
+ []
+
+
+Underfull \hbox (badness 1694) in paragraph at lines 348--352
+\OT1/cmr/m/n/10 componentes para explicar el 80% de
+ []
+
+
+Underfull \hbox (badness 1286) in paragraph at lines 348--352
+\OT1/cmr/m/n/10 la varianza de los datos. Con estos
+ []
+
+[14 <../images/pareto.pdf>] [15]
+<../images/s1.png, id=687, 1003.75pt x 624.3325pt>
 File: ../images/s1.png Graphic file (type png)
 <use ../images/s1.png>
-Package pdftex.def Info: ../images/s1.png  used on input line 316.
+Package pdftex.def Info: ../images/s1.png  used on input line 453.
 (pdftex.def)             Requested size: 372.44865pt x 240.97359pt.
-[13]
-<../images/s2.png, id=662, 739.76375pt x 465.74pt>
+<../images/s2.png, id=689, 739.76375pt x 465.74pt>
 File: ../images/s2.png Graphic file (type png)
 <use ../images/s2.png>
-Package pdftex.def Info: ../images/s2.png  used on input line 324.
+Package pdftex.def Info: ../images/s2.png  used on input line 463.
 (pdftex.def)             Requested size: 241.84843pt x 185.84796pt.
- [14 <../images/s1.png> <../images/s2.png>]
-<../images/s3.png, id=669, 1003.75pt x 624.3325pt>
+ [16 <../images/s1.png> <../images/s2.png>]
+<../images/s3.png, id=697, 1003.75pt x 624.3325pt>
 File: ../images/s3.png Graphic file (type png)
 <use ../images/s3.png>
-Package pdftex.def Info: ../images/s3.png  used on input line 334.
+Package pdftex.def Info: ../images/s3.png  used on input line 474.
 (pdftex.def)             Requested size: 372.44865pt x 240.97359pt.
-<../images/s4.png, id=670, 1003.75pt x 624.3325pt>
+<../images/s4.png, id=698, 1003.75pt x 624.3325pt>
 File: ../images/s4.png Graphic file (type png)
 <use ../images/s4.png>
-Package pdftex.def Info: ../images/s4.png  used on input line 339.
+Package pdftex.def Info: ../images/s4.png  used on input line 479.
 (pdftex.def)             Requested size: 372.44865pt x 240.97359pt.
- [15 <../images/s3.png> <../images/s4.png>]
-<../images/s5.png, id=678, 739.76375pt x 465.74pt>
+
+[17 <../images/s3.png> <../images/s4.png>]
+<../images/s5.png, id=705, 739.76375pt x 465.74pt>
 File: ../images/s5.png Graphic file (type png)
 <use ../images/s5.png>
-Package pdftex.def Info: ../images/s5.png  used on input line 352.
+Package pdftex.def Info: ../images/s5.png  used on input line 493.
 (pdftex.def)             Requested size: 241.84843pt x 185.84796pt.
-<../images/s6.png, id=679, 1003.75pt x 624.3325pt>
+<../images/s6.png, id=706, 1003.75pt x 624.3325pt>
 File: ../images/s6.png Graphic file (type png)
 <use ../images/s6.png>
-Package pdftex.def Info: ../images/s6.png  used on input line 361.
+Package pdftex.def Info: ../images/s6.png  used on input line 502.
 (pdftex.def)             Requested size: 372.44865pt x 240.97359pt.
- [16 <../images/s5.png> <../images/s6.png>]
-<../images/s8.png, id=686, 1003.75pt x 624.3325pt>
+ [18 <../images/s5.png> <../images/s6.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 528--529
+
+ []
+
+<../images/s8.png, id=713, 1003.75pt x 624.3325pt>
 File: ../images/s8.png Graphic file (type png)
 <use ../images/s8.png>
-Package pdftex.def Info: ../images/s8.png  used on input line 375.
+Package pdftex.def Info: ../images/s8.png  used on input line 534.
 (pdftex.def)             Requested size: 372.44865pt x 240.97359pt.
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 389.
- [17 <../images/s8.png>]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 389.
+[19 <../images/s8.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 561--562
 
-(./writeup.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 389.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 389.
+ []
+
+[20]
+File: ../images/s1.png Graphic file (type png)
+<use ../images/s1.png>
+Package pdftex.def Info: ../images/s1.png  used on input line 608.
+(pdftex.def)             Requested size: 435.32422pt x 270.77269pt.
+ [21] [22] [23]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 782.
+ [24]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 782.
+ (./writeup.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 782.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 782.
 Package rerunfilecheck Info: File `writeup.out' has not changed.
-(rerunfilecheck)             Checksum: 682E7D5EF39F1085D7403132EB184BDA;862.
-
-
-LaTeX Warning: There were multiply-defined labels.
-
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 389.
+(rerunfilecheck)             Checksum: 004D1FB1F7A8CF674BE39EC03C778781;1816.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 782.
  ) 
 Here is how much of TeX's memory you used:
- 10143 strings out of 480994
- 147811 string characters out of 5912143
+ 10072 strings out of 480994
+ 146672 string characters out of 5912143
  816041 words of memory out of 5000000
- 25270 multiletter control sequences out of 15000+600000
- 540831 words of font info for 54 fonts, out of 8000000 for 9000
+ 25218 multiletter control sequences out of 15000+600000
+ 541166 words of font info for 55 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  35i,9n,40p,302b,1795s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2019/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc
@@ -654,11 +691,12 @@ l/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr/local
 texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/t
 exlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/local/te
 xlive/2019/texmf-dist/fonts/type1/public/cm-super/sfrm0600.pfb></usr/local/texl
-ive/2019/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb>
-Output written on writeup.pdf (17 pages, 832838 bytes).
+ive/2019/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb></usr/local/texliv
+e/2019/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb>
+Output written on writeup.pdf (24 pages, 860608 bytes).
 PDF statistics:
- 771 PDF objects out of 1000 (max. 8388607)
- 407 compressed objects within 5 object streams
- 177 named destinations out of 1000 (max. 500000)
- 178 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 820 PDF objects out of 1000 (max. 8388607)
+ 448 compressed objects within 5 object streams
+ 159 named destinations out of 1000 (max. 500000)
+ 266 words of extra memory for PDF output out of 10000 (max. 10000000)
 

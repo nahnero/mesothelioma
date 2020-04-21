@@ -1,15 +1,26 @@
 \babel@toc {nil}{}
-\contentsline {section}{\numberline {1}Análisis exploratorio}{4}{section.1}%
-\contentsline {subsection}{\numberline {1.1}Tipos de datos}{4}{subsection.1.1}%
-\contentsline {subsection}{\numberline {1.2}Caja bigotes}{5}{subsection.1.2}%
-\contentsline {subsection}{\numberline {1.3}Histograma}{6}{subsection.1.3}%
-\contentsline {subsection}{\numberline {1.4}Kernel Density}{7}{subsection.1.4}%
-\contentsline {subsection}{\numberline {1.5}Cuantil - cuantil}{8}{subsection.1.5}%
-\contentsline {subsection}{\numberline {1.6}Correlaciones}{9}{subsection.1.6}%
-\contentsline {section}{\numberline {2}Extracción de Características}{10}{section.2}%
-\contentsline {subsection}{\numberline {2.1}Filter methods}{10}{subsection.2.1}%
-\contentsline {subsection}{\numberline {2.2}Wrapper methods}{11}{subsection.2.2}%
-\contentsline {subsection}{\numberline {2.3}PCA}{12}{subsection.2.3}%
-\contentsline {section}{\numberline {3}Modelos de Clasificación}{13}{section.3}%
-\contentsline {section}{\numberline {4}Interfaz}{14}{section.4}%
-\contentsline {subsection}{\numberline {4.1}Interfaz sin opciones}{17}{subsection.4.1}%
+\contentsline {section}{\numberline {1}Contexto y motivación}{4}{section.1}%
+\contentsline {section}{\numberline {2}Objetivos}{4}{section.2}%
+\contentsline {section}{\numberline {3}Materiales y métodos}{5}{section.3}%
+\contentsline {section}{\numberline {4}Resultados y discusión}{5}{section.4}%
+\contentsline {subsection}{\numberline {4.1}Resolución ideal}{5}{subsection.4.1}%
+\contentsline {subsection}{\numberline {4.2}Resolución real}{6}{subsection.4.2}%
+\contentsline {subsubsection}{\numberline {4.2.1}Análisis exploratorio}{7}{subsubsection.4.2.1}%
+\contentsline {paragraph}{\numberline {4.2.1.1}Tipos de datos}{7}{paragraph.4.2.1.1}%
+\contentsline {paragraph}{\numberline {4.2.1.2}Caja bigotes}{8}{paragraph.4.2.1.2}%
+\contentsline {paragraph}{\numberline {4.2.1.3}Histograma}{9}{paragraph.4.2.1.3}%
+\contentsline {paragraph}{\numberline {4.2.1.4}Kernel Density}{10}{paragraph.4.2.1.4}%
+\contentsline {paragraph}{\numberline {4.2.1.5}Cuantil - cuantil}{11}{paragraph.4.2.1.5}%
+\contentsline {paragraph}{\numberline {4.2.1.6}Correlaciones}{12}{paragraph.4.2.1.6}%
+\contentsline {subsubsection}{\numberline {4.2.2}Extracción de Características}{13}{subsubsection.4.2.2}%
+\contentsline {paragraph}{\numberline {4.2.2.1}Filter methods}{13}{paragraph.4.2.2.1}%
+\contentsline {paragraph}{\numberline {4.2.2.2}Wrapper methods}{14}{paragraph.4.2.2.2}%
+\contentsline {paragraph}{\numberline {4.2.2.3}PCA}{14}{paragraph.4.2.2.3}%
+\contentsline {subsubsection}{\numberline {4.2.3}Modelos de Clasificación}{15}{subsubsection.4.2.3}%
+\contentsline {subsubsection}{\numberline {4.2.4}Interfaz}{15}{subsubsection.4.2.4}%
+\contentsline {paragraph}{\numberline {4.2.4.1}Aplicación para médicos}{19}{paragraph.4.2.4.1}%
+\contentsline {paragraph}{\numberline {4.2.4.2}Aplicación para pacientes}{20}{paragraph.4.2.4.2}%
+\contentsline {subsection}{\numberline {4.3}Servidores y conexiones y seguridad}{22}{subsection.4.3}%
+\contentsline {subsection}{\numberline {4.4}Proyecto ALERT}{23}{subsection.4.4}%
+\contentsline {section}{\numberline {5}Conclusiones}{23}{section.5}%
+\contentsline {section}{\numberline {6}Lecciones aprendidas y reflexiones}{23}{section.6}%
