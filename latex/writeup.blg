@@ -1,0 +1,48 @@
+This is BibTeX, Version 0.99d (TeX Live 2017)
+Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
+The top-level auxiliary file: writeup.aux
+The style file: unsrt.bst
+Database file #1: ref.bib
+Warning--empty booktitle in Fons
+You've used 8 entries,
+            1791 wiz_defined-function locations,
+            490 strings with 5111 characters,
+and the built_in function-call counts, 1497 in all, are:
+= -- 121
+> -- 66
+< -- 0
++ -- 26
+- -- 18
+* -- 100
+:= -- 238
+add.period$ -- 21
+call.type$ -- 8
+change.case$ -- 6
+chr.to.int$ -- 0
+cite$ -- 9
+duplicate$ -- 70
+empty$ -- 164
+format.name$ -- 18
+if$ -- 327
+int.to.chr$ -- 0
+int.to.str$ -- 8
+missing$ -- 6
+newline$ -- 40
+num.names$ -- 6
+pop$ -- 26
+preamble$ -- 1
+purify$ -- 0
+quote$ -- 0
+skip$ -- 28
+stack$ -- 0
+substring$ -- 81
+swap$ -- 9
+text.length$ -- 0
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 0
+warning$ -- 1
+while$ -- 12
+width$ -- 9
+write$ -- 78
+(There was 1 warning)

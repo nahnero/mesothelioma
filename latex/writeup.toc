@@ -1,26 +1,30 @@
 \babel@toc {nil}{}
 \contentsline {section}{\numberline {1}Contexto y motivación}{4}{section.1}%
-\contentsline {section}{\numberline {2}Objetivos}{4}{section.2}%
-\contentsline {section}{\numberline {3}Materiales y métodos}{5}{section.3}%
-\contentsline {section}{\numberline {4}Resultados y discusión}{5}{section.4}%
-\contentsline {subsection}{\numberline {4.1}Resolución ideal}{5}{subsection.4.1}%
-\contentsline {subsection}{\numberline {4.2}Resolución real}{6}{subsection.4.2}%
-\contentsline {subsubsection}{\numberline {4.2.1}Análisis exploratorio}{8}{subsubsection.4.2.1}%
-\contentsline {paragraph}{\numberline {4.2.1.1}Tipos de datos}{8}{paragraph.4.2.1.1}%
-\contentsline {paragraph}{\numberline {4.2.1.2}Caja bigotes}{9}{paragraph.4.2.1.2}%
-\contentsline {paragraph}{\numberline {4.2.1.3}Histograma}{10}{paragraph.4.2.1.3}%
-\contentsline {paragraph}{\numberline {4.2.1.4}Kernel Density}{11}{paragraph.4.2.1.4}%
-\contentsline {paragraph}{\numberline {4.2.1.5}Cuantil - cuantil}{12}{paragraph.4.2.1.5}%
-\contentsline {paragraph}{\numberline {4.2.1.6}Correlaciones}{13}{paragraph.4.2.1.6}%
-\contentsline {subsubsection}{\numberline {4.2.2}Extracción de Características}{14}{subsubsection.4.2.2}%
-\contentsline {paragraph}{\numberline {4.2.2.1}Filter methods}{14}{paragraph.4.2.2.1}%
-\contentsline {paragraph}{\numberline {4.2.2.2}Wrapper methods}{15}{paragraph.4.2.2.2}%
-\contentsline {paragraph}{\numberline {4.2.2.3}PCA}{15}{paragraph.4.2.2.3}%
-\contentsline {subsubsection}{\numberline {4.2.3}Modelos de Clasificación}{16}{subsubsection.4.2.3}%
-\contentsline {subsubsection}{\numberline {4.2.4}Interfaz}{16}{subsubsection.4.2.4}%
-\contentsline {paragraph}{\numberline {4.2.4.1}Aplicación para médicos}{20}{paragraph.4.2.4.1}%
-\contentsline {paragraph}{\numberline {4.2.4.2}Aplicación para pacientes}{21}{paragraph.4.2.4.2}%
-\contentsline {subsection}{\numberline {4.3}Servidores y conexiones y seguridad}{23}{subsection.4.3}%
-\contentsline {subsection}{\numberline {4.4}Proyecto ALERT}{24}{subsection.4.4}%
-\contentsline {section}{\numberline {5}Conclusiones}{24}{section.5}%
-\contentsline {section}{\numberline {6}Lecciones aprendidas y reflexiones}{24}{section.6}%
+\contentsline {section}{\numberline {2}Objetivos}{6}{section.2}%
+\contentsline {section}{\numberline {3}Materiales y métodos}{8}{section.3}%
+\contentsline {subsection}{\numberline {3.1}Base de datos}{8}{subsection.3.1}%
+\contentsline {subsection}{\numberline {3.2}Análisis exploratorio, Extracción de características y Desarrollo y evaluación de modelos.}{8}{subsection.3.2}%
+\contentsline {subsection}{\numberline {3.3}Desarrollo Interfaz de usuario CDSS}{10}{subsection.3.3}%
+\contentsline {subsection}{\numberline {3.4}Desarrollo App pacientes}{10}{subsection.3.4}%
+\contentsline {subsection}{\numberline {3.5}Servidores y conexiones y seguridad}{10}{subsection.3.5}%
+\contentsline {subsection}{\numberline {3.6}Proyecto ALERT}{11}{subsection.3.6}%
+\contentsline {section}{\numberline {4}Resultados y discusión}{11}{section.4}%
+\contentsline {subsection}{\numberline {4.1}Resolución ideal}{11}{subsection.4.1}%
+\contentsline {subsection}{\numberline {4.2}Resolución real}{13}{subsection.4.2}%
+\contentsline {subsubsection}{\numberline {4.2.1}Análisis exploratorio}{15}{subsubsection.4.2.1}%
+\contentsline {paragraph}{\numberline {4.2.1.1}Tipos de datos}{15}{paragraph.4.2.1.1}%
+\contentsline {paragraph}{\numberline {4.2.1.2}Caja bigotes}{16}{paragraph.4.2.1.2}%
+\contentsline {paragraph}{\numberline {4.2.1.3}Histograma}{17}{paragraph.4.2.1.3}%
+\contentsline {paragraph}{\numberline {4.2.1.4}Kernel Density}{18}{paragraph.4.2.1.4}%
+\contentsline {paragraph}{\numberline {4.2.1.5}Cuantil - cuantil}{19}{paragraph.4.2.1.5}%
+\contentsline {paragraph}{\numberline {4.2.1.6}Correlaciones}{20}{paragraph.4.2.1.6}%
+\contentsline {subsubsection}{\numberline {4.2.2}Extracción de Características}{21}{subsubsection.4.2.2}%
+\contentsline {paragraph}{\numberline {4.2.2.1}Filter methods}{21}{paragraph.4.2.2.1}%
+\contentsline {paragraph}{\numberline {4.2.2.2}Wrapper methods}{22}{paragraph.4.2.2.2}%
+\contentsline {paragraph}{\numberline {4.2.2.3}PCA}{22}{paragraph.4.2.2.3}%
+\contentsline {subsubsection}{\numberline {4.2.3}Modelos de Clasificación}{23}{subsubsection.4.2.3}%
+\contentsline {subsubsection}{\numberline {4.2.4}Interfaz}{23}{subsubsection.4.2.4}%
+\contentsline {paragraph}{\numberline {4.2.4.1}Aplicación para médicos}{27}{paragraph.4.2.4.1}%
+\contentsline {paragraph}{\numberline {4.2.4.2}Aplicación para pacientes}{28}{paragraph.4.2.4.2}%
+\contentsline {section}{\numberline {5}Conclusiones}{30}{section.5}%
+\contentsline {section}{\numberline {6}Lecciones aprendidas y reflexiones}{30}{section.6}%

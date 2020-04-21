@@ -72,9 +72,387 @@
 \newpage
 
 \section{Contexto y motivación}
+
+
+El mesotelioma maligno (MM) es un tumor agresivo que comúnmente afecta
+a las superficies mesoteliales de las cavidades pleural  y  peritoneal
+y, ocasionalmente, a la túnica vaginal y el  pericardio.   Hasta  hace
+poco  era  considerada	como  una  enfermedad	rara,	sin   embargo,
+últimamente su incidencia está aumentando en múltiples	países	debido
+al uso de asbestos, también conocido como amianto, generalmente en  el
+entorno de la construcción durante la segunda mitad del siglo XX.   Se
+trata de  un  carcinógeno  reconocido  por  la	OMS  desde  1987.   La
+incidencia está alcanzando su punto máximo durante los	últimos  años,
+reflejando el largo periodo de latencia (superior a 25 años) entre  la
+exposición al amianto y el desarrollo del cáncer. Este hecho justifica
+que la incidencia sea desigual en diferentes países del mundo  ya  que
+depende del momento en el  que	dejó  de  usarse  el  asbesto  en  los
+diferentes  países.   En  España  se  prohibió	el  asbesto  de  forma
+definitiva en 2020 por lo que se espera todavía un incremento  de  los
+casos hasta el año 2040. Existe un aumento progresivo a nivel nacional
+de la mortalidad por mesotelioma, de 491 casos en el periodo  de  1976
+al 1980 hasta los 1391 que se estima entre 2016-2020 (264 casos/ año),
+un  60\%  más  que  hace  30  años.   Debido  a  las   características
+epidemiológicas del MM y en especial su alta tasa  de  mortalidad,  ha
+sido objeto de múltiples estudios.  Un estudio publicado en la revista
+Industrial Health constata que las arcas públicas españolas sufragaron
+entre  2004  y	2011,  464  millones  de  euros  para  tratar  tumores
+relacionados con el amianto.
+
+Por otra parte, el  diagnóstico  de  esta  enfermedad  puede  resultar
+difícil, pues se  requiere  a  menudo  de  un  diagnóstico  patológico
+realizado por un patólogo experimentado  para  diferenciar  el	MM  de
+otros procesos benignos o malignos.  Además, el MM  es	un  cáncer  de
+difícil terapia, hoy en día sigue siendo principalmente paliativa. Por
+lo regular, no existe una cura, a menos que la enfermedad  se  detecte
+muy temprano y el  tumor  se  pueda  extirpar  completamente  mediante
+cirugía.  La mayoría de las veces,  al	momento  del  diagnóstico,  la
+enfermedad    está    demasiado    avanzada    para    una    cirugía.
+
+Por ello, se necesita más investigación para avanzar en  las  opciones
+terapéuticas  para   el   MM,	y   estrategias   para	 realizar   la
+personalización  de  la  terapia  a  través  del   descubrimiento   de
+marcadores  predictivos.   Así,  el  MM  se   trata   de   un	cáncer
+potencialmente	prevenible  y  predecible,  ventaja  que  se  pretende
+explotar en el presente  trabajo,  con	el  fin  de  proporcionar  una
+herramienta útil para la  prevención  y  diagnóstico  temprano	de  la
+enfermedad, que en último término resultaría en una mayor probabilidad
+de cura vía cirugía.
+
+Para explotar esta característica de predictibilidad, una  herramienta
+útil son  los  CDSS  (Clinical	Decision  Support  System),  programas
+diseñados para ayudar al  profesional  de  la  salud  en  la  toma  de
+decisiones clínicas, constituyen uno de los temas mas  importantes  en
+el campo de la inteligencia artificial en medicina.  Muchas decisiones
+en salud hoy en día son tan complejas que han sobrepasado la capacidad
+de la mente humana para operar sin ayuda. El mayor desafío es tomar la
+información adecuada y aplicarla a cada paciente en el momento en  que
+la información sea necesaria, y dada  la  inmensa  cantidad  de  datos
+clínicos de la que se dispone en la actualidad, esto se  convierte  en
+una tarea imposible de llevar a cabo por un profesional por sí	mismo.
+Estos sistemas computarizados, sin embargo, son capaces  de  tener  en
+cuenta toda la información disponible haciendo posible la detección de
+cambios fuera del alcance del profesional clínico.
+
+A pesar de que los sistemas de ayuda a la decisión clínica
+definitivamente pueden aportar beneficios con el uso de la ciencia de
+datos clínicos en la práctica clínica diaria, en términos de calidad
+de la atención sanitaria \cite{Belard2016}, su tasa de integración en lo relativo a los
+procesos de atención clínica aún es escasa \cite{Fons}. Aún así, son sistemas con
+un prometedor potencial y con muchas mejoras inminentes en el ámbito
+clínico por delante, pues disponer de CDSS ha demostrado ser una de
+las intervenciones más efectivas de la informática biomédica en la
+mejora de la calidad asistencial y la seguridad de los pacientes.
+
+El uso de métodos de inteligencia artificial en el diagnóstico médico
+ha ido aumentando gradualmente.No hay duda de que las evaluaciones de
+los datos tomados de los pacientes y las decisiones de los expertos
+son los factores más importantes en diagnóstico. Sin embargo, por las
+razones expuestas, a menudo son necesarias diferentes técnicas de
+inteligencia artificial para clasificar una enfermedad. Así, el
+diagnóstico de la enfermedad MM es una cuestión de clasificación
+importante que involucra datos diversos y de diferentes fuentes, por
+lo que estas técnicas podrían resultar de gran ayuda.
+
+\begin{figure}[h]
+\centering
+\includegraphics[width = 0.8\linewidth]{../images/cap2.png}
+\caption{Incremento de información con el tiempo.}
+\end{figure}
+
+Por otra parte, otra herramienta útil para la monitorización y
+seguimiento de los pacientes, así como para la prevención vía
+promoción de buenos hábitos o la interacción paciente-médico o
+paciente-paciente, son las aplicaciones móvil. Hoy en día, la
+penetración del teléfono móvil inteligente en la población crece año
+tras año, siendo el dispositivo tecnológico con mayor penetración en
+países desarrollados como es España, superando ya desde hace unos años
+al PC (\hyperref[fig:cap]{\textbf{Fig.}~\ref*{fig:cap}}), según el estudio de Deloitte de 2017
+\cite{deloitte2017}. Según datos del informe anual Mobile Economy de
+la GSMA, la población mundial que posee un móvil inteligente alcanzó
+en 2017 el 57\% del total y se prevé que alcance el 77\% en 2025.
+
+\begin{figure}[h]
+\centering
+\includegraphics[width = 0.8\linewidth]{../images/cap1.png}
+\caption{Global Mobile Consumer Survey.}
+\label{fig:cap}
+\end{figure}
+
+Las aplicaciones son la forma favorita para conectarse desde los
+dispositivos móviles: casi el 90\% del tiempo de conexión se destina al
+uso de aplicaciones, y los españoles tienen una media de 16 apps
+instaladas en su Smartphone. En cuanto a las apps en salud, son la
+categoría de crecimiento más rápido, tanto en Android como en IOS. En
+este contexto, el desarrollo de una app para el paciente de MM podría
+aportar beneficios muy diversos en aspectos como pueden ser su
+seguimiento y control de la evolución, hasta su potenciación como
+personaje proactivo en su propia salud, así como en materia de
+prevención para pacientes sanos o de riesgo.
+
+
 \section{Objetivos}
+
+
+En este trabajo se presenta una propuesta compuesta por varias
+herramientas con el objetivo conjunto de proporcionar un marco más
+favorable de la enfermedad del mesotelioma maligno, desde los puntos
+de vista de la prevención, predicción y control de la evolución.
+
+Por una parte, se ha realizado un análisis exploratorio de la base de
+datos y un análisis de los factores de riesgo más significativos a la
+hora de diagnosticar el MM, mediante técnicas de extracción de
+características. Así, sobre este conocimiento de los datos se ha
+desarrollado un modelo predictivo junto con una interfaz de usuario
+amigable, para servir como CDSS en el hospital, dirigido a los médicos
+como usuarios, con el objetivo de facilitar el diagnóstico prematuro,
+crucial para incrementar la probabilidad de supervivencia de los
+enfermos.
+
+Por otra parte, se propone una aplicación móvil dirigida a pacientes.
+Ésta tiene dos usuarios diana diferenciados. En primer lugar,
+pacientes enfermos para control de la evolución del MM, permitiendo un
+seguimiento más exhaustivo y de forma cómoda y remota, así como
+proporcionando un marco de información fiable acerca de la enfermedad,
+con posibilidad de interactuar tanto con médicos como con otros
+pacientes en su misma condición. En segundo lugar, se dirige a
+pacientes sanos y de riesgo, para control de los factores de riesgo de
+la enfermedad y para prevención con screening y promoción de buenos
+hábitos. Se ha desarrollado un prototipo de la aplicación propuesta.
+
+Así, ambos productos finales, CDSS con interfaz para médicos y
+aplicación móvil para pacientes, ambos con sus objetivos individuales,
+pretenden en conjunto introducir una mejora en el marco del MM, con
+objetivo último de reducir el impacto de la enfermedad y mejorar la
+calidad asistencial proporcionada con respecto a ésta, así como
+potenciar el papel proactivo del paciente en su salud.
+
+
 \newpage
 \section{Materiales y métodos}
+\subsection{Base de datos}
+
+Para realizar el trabajo, se ha utilizado la base de datos
+Mesothelioma disease data set. Ésta fue preparada en la Facultad de
+Medicina de la Universidad Dicle en Turquía, a partir de informes de
+pacientes tomados por el médico en un hospital, contando con 324
+pacientes. Todas las muestras tienen 34 variables, pues según
+indicaciones de profesionales clínicos este conjunto es más eficaz que
+otros subconjuntos posibles. Estas variables son edad, género, ciudad,
+exposición al asbesto, tipo de MM, duración de la exposición al
+asbesto, método de diagnóstico, ‘keep side’, citología, duración de
+los síntomas, disnea, dolor en el pecho, debilidad, hábito de fumar,
+estado funcional, recuento de glóbulos blancos (WBC), hemoglobina
+(HGB), recuento de plaquetas (PLT), sedimentación, deshidrogenasa
+láctica de la sangre (LDH), fosfatasa alcalina (ALP), proteína total,
+albúmina, glucosa, deshidrogenasa láctica pleural, proteína pleural,
+albúmina pleural, glucosa pleural, muerto o no, derrame pleural,
+grosor pleural en la tomografía, nivel de acidez pleural (pH),
+proteína C reactiva (PCR), clase de diagnóstico.
+
+
+\subsection{Análisis exploratorio, Extracción de características y Desarrollo y evaluación de modelos.}
+
+Para llevar a cabo todas las tareas de análisis exploratorio de los
+datos, extracción de características y desarrollo y evaluación de los
+modelos de predicción de MM, se han utilizado las librerías comunes
+para tratamiento de datos en Python. Python se ha establecido como el
+lenguaje de programación más utilizado en ciencia de datos, pues
+además de ser de código abierto, proporciona todas las herramientas
+necesarias para llevar a cabo estos procesos de manera efectiva y
+relativamente sencilla, con poderosas bibliotecas dedicadas a ello,
+algunas de las cuales, las principalmente empleadas, se describen a
+continuación. Estas herramientas son idóneas para nuestro desarrollo
+concreto, que requiere implementaciones muy especializadas, por lo que
+las funciones básicas de estas librerías nos permiten llevar a cabo
+nuestra tarea de manera muy simple y rápida.
+
+\begin{itemize}
+\item
+Scikit-learn\cite{scikit-learn}: es una de las librerías más útiles para el desarrollo
+algorítmico y el análisis exploratorio de datos en Python. Presenta
+una amplia gama de algoritmos de aprendizaje automático para problemas
+tanto supervisados, como es nuestro caso, como no supervisados, así
+como métodos para la validación de los modelos, proporcionando
+diferentes métricas para evaluar su desempeño.\cite{wijnhoven2019}
+
+\item
+Pandas: se trata de un paquete de Python para trabajar con dataframes
+con soporte para leer y escribir datos en diferentes formatos como csv
+para ser utilizados posteriormente por los modelos de clasificación.\cite{pandas}
+
+
+\item
+Matplotlib: se utiliza para la creación y visualización de los
+		resultados gráficos, disponiendo de un amplio abanico
+		de opciones.\cite{mpl}
+
+\end{itemize}
+
+La naturaleza open source de las herramientas empleadas para la
+implementación permiten junto con github trabajar varios
+desarrolladores fácilmente de forma simultánea en el proyecto.
+Además, Python tiene pip, un sistema de gestión de paquetes utilizado
+para instalar y administrar paquetes de software, lo que permitiría
+distribuir nuestra aplicación de forma accesible si esa fuera nuestra
+intención.
+
+En cuanto a los modelos, se ha experimentado con diversos tipos,
+muchos de ellos conocidos para nosotros pues los hemos estudiado en
+asignaturas previas como SIT I o Imágenes Biomédcas, para poder hacer
+una comparativa y seleccionar el modelo óptimo para nuestro caso de
+estudio. A continuación se describen brevemente las distintas técnicas
+de aprendizaje utilizadas.
+
+\begin{itemize}
+\item
+LDA (Linear Discriminant Analysis) es una generalización del
+discriminante lineal de Fisher, un método que trata de encontrar una
+combinación lineal de las variables que separe las clases. Se trata
+del modelo más simple, un modelo lineal, utilizado como primera
+aproximación para observar el comportamiento de los datos y poder
+comparar después con clasificadores más complejos. También se prueba
+su variante QDA (Quadratic Discriminant Analysis) en la que se estima
+una matriz de covarianza individual para cada clase de observaciones.
+El LDA y el QDA son dos clasificadores clásicos, con, como lo sugieren
+sus nombres, una superficie de decisión lineal y una cuadrática,
+respectivamente. Estos clasificadores son atractivos porque tienen
+soluciones de forma cerrada que pueden calcularse fácilmente, han
+demostrado funcionar bien en la práctica y no tienen hiperparámetros
+para ajustar.\cite{scikit-learn}
+
+\item
+
+KNN (K-Nearest Neighbour) es un algoritmo de clasificación supervisado
+simple que podemos usar para asignar una clase a un
+nuevo punto de datos. KNN no hace suposiciones sobre
+la distribución de datos, por lo tanto, no es
+paramétrico. Almacena todos los datos de entrenamiento
+para hacer predicciones futuras al calcular la
+similitud entre una muestra de entrada y cada
+instancia de entrenamiento. Se trata de nuevo de un
+modelo sin mayor complejidad, pero ampliamente
+utilizado por ser rápido y en ocasiones suficiente.
+\item
+
+Otra técnica empleada es SVM (Support Vector Machines), un
+conjunto de métodos de aprendizaje supervisado
+utilizados entre otras tareas, para la clasificación.
+Una de las ventajas que hacen esta técnica atractiva
+para nuestro caso es que resulta bastante efectivo en
+espacios de altas dimensiones, como podrían
+considerarse nuestros datos con 34 variables.\cite{scikit-learn}
+
+\item
+También se ha empleado Random Forest, un meta estimador que se ajusta
+		a varios clasificadores de árboles de decisión en
+		varias submuestras del conjunto de datos y utiliza el
+		promedio para mejorar la precisión predictiva y
+		controlar el sobreajuste.
+
+\item
+
+PNN (Probabilistic Neural Network): una red neuronal unidireccional
+		derivada de la red bayesiana y un algortítmo
+		estadístico llamado Kernel Fisher discriminant
+		analysis. Ha demostrado dar buenos resultados en
+		estudios en el campo biomédico, por ejemplo, para
+		diagnóstico clínico.\cite{Wang2010}
+
+\item
+
+ MLP (Multilayer Perceptron): se trata de una red neuronal que dado un
+		conjunto de variables, aprende una función de mapeo no
+		lineal para clasificación.
+
+\end{itemize}
+
+\subsection{Desarrollo Interfaz de usuario CDSS}
+
+Para el desarrollo de la interfaz de usuario (GUI) del CDSS para ser
+utilizada por el médico en el hospital para diagnóstico de MM, hemos
+empleado Qt, un framework multiplataforma orientado a objetos
+ampliamente usado para desarrollar software con interfaz gráfica de
+usuario. Qt es de software libre y de código abierto, es flexible,
+presenta muchas opciones de personalización y dispone de los widgets
+apropiados y de interfaz gráfica para diseñar nuestra interfaz.
+Además, la implementación en Python es simple y fácil de usar,
+permitiendo una programación relativamente rápida e intuitiva. Qt
+admite también otros lenguajes de programación, pero al haber elegido
+Python para desarrollar los modelos, la integración es inmediata.
+
+\subsection{Desarrollo App pacientes}
+
+En el presente trabajo, únicamente se implementará un prototipo de la
+aplicación móvil con MIT App Inventor, un entorno de programación
+visual e intuitivo que permite a todos crear aplicaciones funcionales
+para Smartphone y Tablet. Se ha seleccionado esta herramienta por su
+facilidad de uso y rapidez de desarrollo, gracias a su filosofía de
+programación basada en bloques.
+
+Para el desarrollo de la app de la solución ideal con funcionalidad
+completa, sería conveniente emplear Android Studio, el entorno de
+desarrollo integrado (IDE) oficial para el desarrollo de apps para
+Android.
+
+
+
+\subsection{Servidores y conexiones y seguridad}
+
+
+En lo concerniente a los servidores para almacenar la información,  se
+ha decidido optar por la opción de un servidor en la  nube.   Así,  el
+motivo de esta decisión reside en las ventajas que ofrece un  servidor
+con estas características, ya  que  podríamos  ampliar	o  reducir  el
+espacio disponible de forma flexible aumentando la rentabilidad frente
+a almacenamientos compartidos o  locales.   A  su  vez,  la  idea  del
+proyecto sería intentar expandir  su  alcance  a  nivel  autonómico  o
+nacional progresivamente, por lo  que  sería  necesario  almacenar  la
+información de los pacientes en un espacio al  que  se	pueda  acceder
+fácilmente por todos los hospitales o centro sanitarios implicados  en
+el proyecto sin comprometer por  ello  los  recursos  individuales  de
+alguno de ellos.  A su vez, habría que optar por  una  plataforma  que
+ofreciese unos umbrales de seguridad  aptos  para  el  tratamiento  de
+información sanitaria, de forma  que  realmente  pudiese  aprovecharse
+ventajas como la confiabilidad o escalabilidad de los servidores en la
+nube.
+
+Asimismo, incidiendo en el aspecto de la  seguridad,  el  proyecto  en
+cuestión apuesta por un paciente activo el cual tiene la capacidad  de
+participar activamente en su propia salud, en este  caso  mediante  la
+información y recomendaciones ofrecidas en la aplicación y a partir de
+la consulta de registros médicos y envío de datos de su estado	actual
+a los servidores mencionados anteriormente. También, sería mencionable
+que la aplicación  dispondría  no  sólo  de  un  chat  para  comunicar
+pacientes, sino también para contactar con  profesionales  sanitarios,
+por lo que se estaría transmitiendo continuamente información personal
+y confidencial.  Por tanto, debido al flujo de datos  que  se  estaría
+dando y a la condición de éstos, sería necesario el  uso  de  una  red
+privada virtual (VPN).	Así, el tráfico  de  datos  generado  viajaría
+cifrado, dificultando que agentes externos puedan robar la información
+confidencial  transmitida.   A	su  vez,  todos  los  usuarios	de  la
+aplicación podrían emplearla haciendo uso de  redes  Wi-Fi  locales  o
+públicas con la tranquilidad de que se están empleando	recursos  para
+proteger la integridad y  confidencialidad  de	la  información.   Por
+tanto,	podríamos  emplear  protocolos	como  Ipsec  para  mejorar  la
+seguridad  de  nuestras   conexiones   y   transmisiones   de	datos.
+
+\subsection{Proyecto ALERT}
+
+Con el fin de localizar aquellas regiones en la que la	exposición  al
+asbesto fuese mayor, se emplearía el dispositivo ALERT.  Este  sistema
+desarrollado como un proyecto europeo en el que han colaborado	varios
+centros de investigación entre los que podríamos destacar el Instituto
+de Biomecánica de Valencia (IBV), permite  detectar  la  presencia  de
+fibras de amianto en el aire analizando los patrones  de  luz  de  las
+partículas suspendidas en el  entorno.	 Así,  gracias	a  su  pequeño
+tamaño, lo que hace que se considere un  dispositivo  portable,  junto
+con la capacidad de analizar en tiempo real la cantidad de microfibras
+de amianto en el espacio que lo rodea, permitiría identificar aquellas
+industrias donde le riesgo fuese mayor	pudiendo  obtener  información
+espacial sobre las  zonas  donde  el  nivel  de  riesgo  debido  a  la
+manipulación del amianto es mayor.
+
 \section{Resultados y discusión}
 \subsection{Resolución ideal}
 
@@ -674,63 +1052,6 @@ videos, noticias de periódico y más información que se fuese
 actualizando periódicamente.
 \end{itemize}
 
-
-\subsection{Servidores y conexiones y seguridad}
-
-
-En lo concerniente a los servidores para almacenar la información,  se
-ha decidido optar por la opción de un servidor en la  nube.   Así,  el
-motivo de esta decisión reside en las ventajas que ofrece un  servidor
-con estas características, ya  que  podríamos  ampliar	o  reducir  el
-espacio disponible de forma flexible aumentando la rentabilidad frente
-a almacenamientos compartidos o  locales.   A  su  vez,  la  idea  del
-proyecto sería intentar expandir  su  alcance  a  nivel  autonómico  o
-nacional progresivamente, por lo  que  sería  necesario  almacenar  la
-información de los pacientes en un espacio al  que  se	pueda  acceder
-fácilmente por todos los hospitales o centro sanitarios implicados  en
-el proyecto sin comprometer por  ello  los  recursos  individuales  de
-alguno de ellos.  A su vez, habría que optar por  una  plataforma  que
-ofreciese unos umbrales de seguridad  aptos  para  el  tratamiento  de
-información sanitaria, de forma  que  realmente  pudiese  aprovecharse
-ventajas como la confiabilidad o escalabilidad de los servidores en la
-nube.
-
-Asimismo, incidiendo en el aspecto de la  seguridad,  el  proyecto  en
-cuestión apuesta por un paciente activo el cual tiene la capacidad  de
-participar activamente en su propia salud, en este  caso  mediante  la
-información y recomendaciones ofrecidas en la aplicación y a partir de
-la consulta de registros médicos y envío de datos de su estado	actual
-a los servidores mencionados anteriormente. También, sería mencionable
-que la aplicación  dispondría  no  sólo  de  un  chat  para  comunicar
-pacientes, sino también para contactar con  profesionales  sanitarios,
-por lo que se estaría transmitiendo continuamente información personal
-y confidencial.  Por tanto, debido al flujo de datos  que  se  estaría
-dando y a la condición de éstos, sería necesario el  uso  de  una  red
-privada virtual (VPN).	Así, el tráfico  de  datos  generado  viajaría
-cifrado, dificultando que agentes externos puedan robar la información
-confidencial  transmitida.   A	su  vez,  todos  los  usuarios	de  la
-aplicación podrían emplearla haciendo uso de  redes  Wi-Fi  locales  o
-públicas con la tranquilidad de que se están empleando	recursos  para
-proteger la integridad y  confidencialidad  de	la  información.   Por
-tanto,	podríamos  emplear  protocolos	como  Ipsec  para  mejorar  la
-seguridad  de  nuestras   conexiones   y   transmisiones   de	datos.
-
-\subsection{Proyecto ALERT}
-
-Con el fin de localizar aquellas regiones en la que la	exposición  al
-asbesto fuese mayor, se emplearía el dispositivo ALERT.  Este  sistema
-desarrollado como un proyecto europeo en el que han colaborado	varios
-centros de investigación entre los que podríamos destacar el Instituto
-de Biomecánica de Valencia (IBV), permite  detectar  la  presencia  de
-fibras de amianto en el aire analizando los patrones  de  luz  de  las
-partículas suspendidas en el  entorno.	 Así,  gracias	a  su  pequeño
-tamaño, lo que hace que se considere un  dispositivo  portable,  junto
-con la capacidad de analizar en tiempo real la cantidad de microfibras
-de amianto en el espacio que lo rodea, permitiría identificar aquellas
-industrias donde le riesgo fuese mayor	pudiendo  obtener  información
-espacial sobre las  zonas  donde  el  nivel  de  riesgo  debido  a  la
-manipulación del amianto es mayor.
-
 \section{Conclusiones}
 
 \section{Lecciones aprendidas y reflexiones}
@@ -786,6 +1107,8 @@ prototipado de la misma) demostrando utilidad y aplicabilidad  de  los
 contenidos académicos a la realidad.
 
 
-
+\newpage
+\bibliographystyle{unsrt}
+\bibliography{ref}
 
 \end{document}

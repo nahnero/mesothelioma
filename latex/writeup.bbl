@@ -1,0 +1,53 @@
+\begin{thebibliography}{1}
+
+\bibitem{Belard2016}
+Arnaud Belard, Timothy Buchman, Jonathan Forsberg, Benjamin~K. Potter,
+  Christopher~J. Dente, Allan Kirk, and Eric Elster.
+\newblock Precision diagnosis: a view of the clinical decision support systems
+  ({CDSS}) landscape through the lens of critical care.
+\newblock {\em Journal of Clinical Monitoring and Computing}, 31(2):261--271,
+  February 2016.
+
+\bibitem{Fons}
+Fons Wijnhoven and Rick {Klein Koerkamp}.
+\newblock Barriers for adoption of analytical cdss in healthcare: Insights from
+  case stakeholders.
+\newblock 10 2019.
+\newblock 5th International Conference on Information and Communication
+  Technologies in Organizations and Society, ICTO 2019 : The Impact of
+  Artificial Intelligence on Business and Society, ICTO 2019 ; Conference date:
+  24-10-2019 Through 25-10-2019.
+
+\bibitem{deloitte2017}
+L~Deloitte.
+\newblock State of the smart.
+\newblock {\em Consumer and Business Usage Patterns. Global Mobile Consumer
+  Survey}, 2017.
+
+\bibitem{scikit-learn}
+Pedregosa.
+\newblock Scikit-learn: Machine learningin{P}ython.
+\newblock {\em Journal of Machine Learning Research}, 12:2825--2830, 2011.
+
+\bibitem{wijnhoven2019}
+Fons Wijnhoven and Rick~Klein Koerkamp.
+\newblock Barriers for adoption of analytical cdss in healthcare: Insights from
+  case stakeholders.
+\newblock In {\em 5th International Conference on Information and Communication
+  Technologies in Organizations and Society, ICTO 2019: The Impact of
+  Artificial Intelligence on Business and Society}, 2019.
+
+\bibitem{pandas}
+{\em pandas — Bioinformatics at COMAV 0.1 documentation.}, 10-Apr-2020.
+
+\bibitem{mpl}
+{\em matplotlib.pyplot — Matplotlib 3.1.2 documentation.}, 10-Apr-2020.
+
+\bibitem{Wang2010}
+Shu-Lin Wang, Xueling Li, Shanwen Zhang, Jie Gui, and De-Shuang Huang.
+\newblock Tumor classification by combining {PNN} classifier ensemble with
+  neighborhood rough set based gene reduction.
+\newblock {\em Computers in Biology and Medicine}, 40(2):179--189, February
+  2010.
+
+\end{thebibliography}
