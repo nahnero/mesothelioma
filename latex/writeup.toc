@@ -27,4 +27,4 @@
 \contentsline {paragraph}{\numberline {4.2.4.1}Aplicación para médicos}{27}{paragraph.4.2.4.1}%
 \contentsline {paragraph}{\numberline {4.2.4.2}Aplicación para pacientes}{28}{paragraph.4.2.4.2}%
 \contentsline {section}{\numberline {5}Conclusiones}{30}{section.5}%
-\contentsline {section}{\numberline {6}Lecciones aprendidas y reflexiones}{30}{section.6}%
+\contentsline {section}{\numberline {6}Lecciones aprendidas y reflexiones}{31}{section.6}%
